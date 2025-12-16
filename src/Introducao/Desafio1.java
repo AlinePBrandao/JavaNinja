@@ -16,6 +16,7 @@ public class Desafio1 {
         System.out.print("Nivel de Dificuldade: ");
         char nivelDificuldade = sc.next().charAt(0);
 
+        //TODO: implementar switch case para manu de status da missão
         System.out.print("Informe o status da missão: ");
         sc.nextLine();
         String statusMissao = sc.nextLine();
@@ -39,6 +40,5 @@ public class Desafio1 {
         System.out.println("Status da Missão: " + statusMissao );
 
         sc.close();
-
     }
 }
