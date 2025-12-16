@@ -17,18 +17,29 @@ public class Desafio1 {
         char nivelDificuldade = sc.next().charAt(0);
 
         //TODO: implementar switch case para manu de status da missão
-        System.out.print("Informe o status da missão: ");
-        sc.nextLine();
-        String statusMissao = sc.nextLine();
+        System.out.print("Informe o status da missão: 1- Em andamento || 2- Concluída: ");
+        int statusMissao = sc.nextInt();
+
+        switch (statusMissao){
+            case 1:
+                System.out.println("Em andamento");
+                break;
+            case 2:
+                System.out.println("Concluída");
+                break;
+            default:
+                System.out.println("Erro, tente novamente.");
+                break;
+        }
 
         if (idade < 15){
             if (nivelDificuldade == 'C' || nivelDificuldade == 'D') {
-                statusMissao = "Concluida";
+                statusMissao = Integer.parseInt("Concluida");
             } else {
-                statusMissao = "Não concluida, idade insuficiente";
+                statusMissao = Integer.parseInt("Não concluida, idade insuficiente");
             }
         } else {
-            statusMissao = "Concluida";
+            statusMissao = Integer.parseInt("Concluida");
         }
 
         System.out.println();
