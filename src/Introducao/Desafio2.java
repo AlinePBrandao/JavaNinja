@@ -53,7 +53,6 @@ public class Desafio2 {
             break;
         }
         }
-
         sc.close();
     }
 }
