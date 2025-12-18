@@ -10,6 +10,6 @@ public class Uchiha extends Ninja{
     @Override
     public void mostrarInformacoes() {
         super.mostrarInformacoes();
-        System.out.println("Habilidade especial Uchiha");
+        System.out.println("Habilidade especial: " + habilidadeEspecial);
     }
 }
