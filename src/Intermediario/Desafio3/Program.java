@@ -8,7 +8,7 @@ public class Program {
         Scanner sc = new Scanner(System.in);
 
         ArrayList<Ninja> ninjas = new ArrayList<>();
-        //NOTE: estou usando ArrayList porque não desejo definir o tamanho do meu array.
+        //NOTE: usando ArrayList porque não desejo definir o tamanho do meu array.
 
         int opcoes = 0;
 
