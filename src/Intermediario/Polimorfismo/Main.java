@@ -10,5 +10,6 @@ public class Main {
         Uchiha sasuke = new Uchiha();
         sasuke.nome = "Sasuke Uchiha";
         sasuke.habilidadeEspecial();
+
     }
 }
