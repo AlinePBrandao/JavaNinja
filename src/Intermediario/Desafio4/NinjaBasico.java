@@ -2,6 +2,9 @@ package Intermediario.Desafio4;
 
 public class NinjaBasico extends InformacoesNinjas implements Ninja{
 
+    public NinjaBasico() {
+    }
+
     public NinjaBasico(String nome, int idade, TipoHabilidade habilidade) {
         super(nome, idade, habilidade);
     }

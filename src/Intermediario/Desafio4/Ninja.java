@@ -6,5 +6,4 @@ public interface Ninja {
 
     public void executarHabilidade();
 
-
 }

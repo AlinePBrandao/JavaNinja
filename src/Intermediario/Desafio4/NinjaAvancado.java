@@ -4,6 +4,8 @@ public class NinjaAvancado extends InformacoesNinjas implements Ninja{
 
     public String especialidade;
 
+    public NinjaAvancado() {
+    }
 
     public NinjaAvancado(String nome, int idade, TipoHabilidade habilidade, String especialidade) {
         super(nome, idade, habilidade);

@@ -18,6 +18,5 @@ public class Main {
         Fiasco.executarHabilidade();
 
         sc.close();
-
     }
 }

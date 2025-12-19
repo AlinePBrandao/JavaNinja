@@ -6,5 +6,4 @@ public enum TipoHabilidade {
     GENJUTSU,
     KATON,
     RINNENGAN;
-
 }
