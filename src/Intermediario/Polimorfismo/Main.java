@@ -17,10 +17,15 @@ public class Main {
         Uchiha sasuke = new Uchiha();
         sasuke.nome = "Sasuke Uchiha";
         sasuke.aldeia = "Aldeia da Folha";
-        sasuke.idade = 18;
+        sasuke.idade = 17;
 
         sasuke.informacoesNinja();
         sasuke.habilidadeEspecial();
+
+        //NOTE: objeto criado usando o consructor com argumentos
+        Uchiha itachi = new Uchiha("Itachi Uchiha", "Aldeia da Folha", 27);
+        itachi.informacoesNinja();
+        itachi.habilidadeEspecial();
 
     }
 }
