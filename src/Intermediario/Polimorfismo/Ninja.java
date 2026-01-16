@@ -19,7 +19,6 @@ public abstract class Ninja implements EstrategiaDeBatalha{
     public void habilidadeEspecial(){
     }
 
-
     //NOTE: Métodos abstratos são obrigatórios instanciados em todas as classes que extenderem a classe Ninja,
     // não possuem corpo
     //public abstract void estrategiaDeBatalha(); convertivo em insteface
