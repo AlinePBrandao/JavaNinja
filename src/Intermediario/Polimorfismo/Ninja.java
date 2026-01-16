@@ -7,11 +7,18 @@ public abstract class Ninja implements EstrategiaDeBatalha{
     String aldeia;
     int idade;
 
+    //NOTE: todos os ninjas terão informações obrigatoriamente
+    //NOTE: Método não abstrato
+    public void informacoesNinja(){
+        System.out.println("Meu nome é " + nome + " tenho " + idade + " anos");
+        System.out.println("Pertenço a " + aldeia);
+    }
+
     //NOTE: todos os ninjas terão habilidade especial obrigatoriamente
     //NOTE: Método não abstrato
     public void habilidadeEspecial(){
-        System.out.println("Meu nome é " + nome + " essa é minha habilidade especial");
     }
+
 
     //NOTE: Métodos abstratos são obrigatórios instanciados em todas as classes que extenderem a classe Ninja,
     // não possuem corpo
@@ -22,5 +29,6 @@ public abstract class Ninja implements EstrategiaDeBatalha{
     @Override
     public void estrategiaDeBatalha() {
         System.out.println("Essa é a minha estratégia de batalha");
+        System.out.println();
     }
 }
