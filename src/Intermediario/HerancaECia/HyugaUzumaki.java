@@ -1,4 +1,4 @@
-package Intermediario.HerançaECia;
+package Intermediario.HerancaECia;
 
 public interface HyugaUzumaki {
 

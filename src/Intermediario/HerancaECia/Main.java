@@ -1,4 +1,4 @@
-package Intermediario.HerançaECia;
+package Intermediario.HerancaECia;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,6 +8,7 @@ public class Main {
         Naruto.aldeia = "Aldeia da Folha";
         Naruto.idade = 17;
         Naruto.modoSabioAtivado();
+        Naruto.sharinganAtivado();
 
         Hyuga Hinata = new Hyuga();
         Hinata.nome = "Hinata Hyuga";
@@ -22,5 +23,13 @@ public class Main {
         Boruto.modoSabioAtivado();
         Boruto.ativarOKarma();
         Boruto.ativarJougan();
+
+        Hatake Kakashi = new Hatake();
+        Kakashi.nome = "Kakashi Hatake";
+        Kakashi.aldeia = "Aldeia da Folha";
+        Kakashi.idade = 48;
+        Kakashi.boasVindas();
+        Kakashi.sharinganAtivado();
+        Kakashi.ninjaDeElite();
     }
 }
