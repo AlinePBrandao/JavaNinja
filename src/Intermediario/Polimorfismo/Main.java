@@ -4,12 +4,8 @@ public class Main {
     public static void main(String[] args) {
 
         //NOTE: Obj Uzumaki
-        Uzumaki naruto = new Uzumaki();
-        naruto.nome = "Naruto Uzumaki";
-        naruto.aldeia = "Aldeia da Folha";
-        naruto.idade = 16;
-
-        naruto.informacoesNinja();
+        Uzumaki naruto = new Uzumaki("Naruto Uzumaki", "Aldeia da Folha", 16);
+        naruto.informacoesNinjaUzumaki();
         naruto.habilidadeEspecial();
         naruto.estrategiaDeBatalha();
 
@@ -19,7 +15,7 @@ public class Main {
         sasuke.habilidadeEspecial();
 
         //NOTE: objeto criado usando o consructor com argumentos
-        Uchiha itachi = new Uchiha("Itachi Uchiha", "Aldeia da Folha", 27);
+        Uchiha itachi = new Uchiha("Itachi Uchiha", "Aldeia da Folha", 27, 50, NivelNinja.JOUNNIN);
         itachi.informacoesNinja();
         itachi.habilidadeEspecial();
 
