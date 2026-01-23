@@ -6,6 +6,8 @@ public abstract class Ninja implements EstrategiaDeBatalha{
     String nome;
     String aldeia;
     int idade;
+    int numeroMissoesConcluidas;
+    NivelNinja rank;
 
     public Ninja() {
     }
@@ -16,11 +18,18 @@ public abstract class Ninja implements EstrategiaDeBatalha{
         this.idade = idade;
     }
 
-    //NOTE: todos os ninjas terão informações obrigatoriamente
-    //NOTE: Método não abstrato
+    //TODO: Sobrecarga do construtor chamando os novos atributos
+    public Ninja(String nome, String aldeia, int idade, int numeroMissoesConcluidas, NivelNinja rank) {
+        this(nome, aldeia, idade);
+        this.numeroMissoesConcluidas = numeroMissoesConcluidas;
+        this.rank = rank;
+    }
+
+    //NOTE: todos os ninjas terão informações obrigatorias, esse é um método não abstrato
     public void informacoesNinja(){
         System.out.println("Meu nome é " + nome + " tenho " + idade + " anos");
-        System.out.println("Pertenço a " + aldeia);
+        System.out.println("Pertenço a " + aldeia + ", concluí " + numeroMissoesConcluidas + " missões");
+        System.out.println("Meu nível ninja é " + rank);
         System.out.println();
     }
 
@@ -32,13 +41,11 @@ public abstract class Ninja implements EstrategiaDeBatalha{
     // não possuem corpo
     //public abstract void estrategiaDeBatalha(); convertivo em insteface
 
-
     //NOTE: Sobrescrita do método da interface
     @Override
     public void estrategiaDeBatalha() {
         System.out.println("Essa é a minha estratégia de batalha");
         System.out.println("--------");
         System.out.println();
-
     }
 }

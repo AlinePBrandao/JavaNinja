@@ -14,11 +14,7 @@ public class Main {
         naruto.estrategiaDeBatalha();
 
         //NOTE: Obj Uchiha
-        Uchiha sasuke = new Uchiha();
-        sasuke.nome = "Sasuke Uchiha";
-        sasuke.aldeia = "Aldeia da Folha";
-        sasuke.idade = 17;
-
+        Uchiha sasuke = new Uchiha("Sasuke Uchiha", "Aldeia da Folha", 18, 20, NivelNinja.GENIN);
         sasuke.informacoesNinja();
         sasuke.habilidadeEspecial();
 
@@ -27,5 +23,9 @@ public class Main {
         itachi.informacoesNinja();
         itachi.habilidadeEspecial();
 
+        //NOTE: sobrecarga de construtores
+        Uchiha madara = new Uchiha("Madara Uchiha", "Aldeia da Folha", 45, 900, NivelNinja.KAGE);
+        madara.informacoesNinja();
+        madara.habilidadeEspecial();
     }
 }

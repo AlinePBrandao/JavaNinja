@@ -9,6 +9,10 @@ public class Uchiha extends Ninja{
     public Uchiha(String nome, String aldeia, int idade) {
         super(nome, aldeia, idade);
     }
+    //NOTE: sobrecarga do constructor
+    public Uchiha(String nome, String aldeia, int idade, int numeroMissoesConcluidas, NivelNinja rank) {
+        super(nome, aldeia, idade, numeroMissoesConcluidas, rank);
+    }
 
     //NOTE: Sobrescrita de metodo
     @Override
