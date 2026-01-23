@@ -22,4 +22,14 @@ public class Uchiha extends Ninja{
     }
     //NOTE: Interface EstrategiaDeBatalha não precisa ser implementada porque ela já foi implementada pela classe Ninja,
     // logo suas subsclasses herdam
+
+    @Override
+    public void inteligenciaDeCombate() {
+        super.inteligenciaDeCombate();
+    }
+
+    @Override
+    public void inteligenciaDeCombate(int qi) {
+        super.inteligenciaDeCombate(qi);
+    }
 }

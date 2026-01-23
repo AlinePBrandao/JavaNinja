@@ -53,4 +53,22 @@ public abstract class Ninja implements EstrategiaDeBatalha{
         System.out.println("Essa é a minha estratégia de batalha");
         System.out.println("--------");
     }
+
+    //NOTE: sobrecarga do método sem parâmetro
+    @Override
+    public void inteligenciaDeCombate() {
+        System.out.println("Inteligência de combate");
+    }
+    //NOTE: sobrecarga do método com parâmetro
+    @Override
+    public void inteligenciaDeCombate(int qi) {
+        if (qi > 150){
+            System.out.println("Seu QI é de " + qi + ", você é um gênio");
+        } else if (qi >= 130) {
+            System.out.println("Seu QI é de " + qi + ", você é um ninja promissor");
+        }
+        else {
+            System.out.println("Seu QI é de " + qi + ", você precisa treinar mais suas estratégias");
+        }
+    }
 }
