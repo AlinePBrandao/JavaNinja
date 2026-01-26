@@ -8,5 +8,4 @@ public class NinjaUzumaki extends InfosNinja{
     public NinjaUzumaki(String nome, String aldeia, int idade) {
         super(nome, aldeia, idade);
     }
-
 }
