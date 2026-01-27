@@ -25,5 +25,10 @@ public class Main {
         madara.habilidadeEspecial();
         madara.inteligenciaDeCombate();
         madara.inteligenciaDeCombate(155);
+
+        System.out.println();
+        Anbu ninjaAnbu = new Anbu();
+        ninjaAnbu.nome = "Ninja Anbu";
+        System.out.println(ninjaAnbu.nome);
     }
 }
