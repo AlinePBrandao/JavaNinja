@@ -2,11 +2,8 @@ package Intermediario.Desafio5;
 
 public class ContaPoupanca extends ContaBancaria{
 
-    public ContaPoupanca() {
-    }
-
     public ContaPoupanca(int numeroConta, String titularConta, double saldoConta) {
-        super(numeroConta, titularConta, saldoConta);
+        super(numeroConta, titularConta, saldoConta, TipoConta.POUPANCA);
     }
 
     @Override
@@ -21,7 +18,7 @@ public class ContaPoupanca extends ContaBancaria{
         double valorLiquido = valor - taxa;
         saldoConta += valorLiquido;
         System.out.printf("Depósito: %.2f | Taxa: %.2f | Valor creditado: %.2f%n", valor, taxa, valorLiquido);
-        System.out.printf("Saldo atualizado: %.2f", saldoConta);
+        System.out.printf("Saldo atualizado: %.2f%n", saldoConta);
         System.out.println();
     }
 }
