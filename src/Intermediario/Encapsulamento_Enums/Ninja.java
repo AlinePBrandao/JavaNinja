@@ -1,4 +1,4 @@
-package Intermediario.Encapsulamento;
+package Intermediario.Encapsulamento_Enums;
 
 public class Ninja {
 

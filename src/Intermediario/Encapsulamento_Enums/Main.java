@@ -1,4 +1,4 @@
-package Intermediario.Encapsulamento;
+package Intermediario.Encapsulamento_Enums;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,6 +8,12 @@ public class Main {
         naruto.setNome("Naruto Uzumaki");
         System.out.println(naruto.getNome()); //NOTE: MNostra o nome alterado pelo set
 
-        System.out.println("-----------------Sasuke Uchiha-----------------");
+       Missoes missao1 = new Missoes("Resgatar cachorro", RankMissoes.D);
+       missao1.exibirDetalhes();
+
+       Missoes missao2 = new Missoes("Derrotar Zabuza", RankMissoes.S);
+       missao2.exibirDetalhes();
+
+
     }
 }
