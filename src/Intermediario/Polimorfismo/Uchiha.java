@@ -18,7 +18,6 @@ public class Uchiha extends Ninja implements SharinganInterface{
     @Override
     public void habilidadeEspecial() {
         System.out.println("Essa é meu ataque Uchiha, um ataque de fogo");
-        System.out.println("--------");
     }
     //NOTE: Interface EstrategiaDeBatalha não precisa ser implementada porque ela já foi implementada pela classe Ninja,
     // logo suas subsclasses herdam

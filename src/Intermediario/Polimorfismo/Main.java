@@ -4,8 +4,9 @@ public class Main {
     public static void main(String[] args) {
 
         //NOTE: objeto criado usando o consructor com argumentos
-        Uzumaki naruto = new Uzumaki("Naruto Uzumaki", "Aldeia da Folha", 16);
+        Uzumaki naruto = new Uzumaki("Naruto Uzumaki", "Aldeia da Folha", 16, 15, NivelNinja.GENIN, Bijus.KURAMA);
         naruto.informacoesNinjaUzumaki();
+        System.out.println("Minha Biju é " + naruto.bijus);
         naruto.habilidadeEspecial();
         naruto.estrategiaDeBatalha();
 
@@ -14,6 +15,7 @@ public class Main {
         Uchiha sasuke = new Uchiha("Sasuke Uchiha", "Aldeia da Folha", 18, 20, NivelNinja.GENIN);
         sasuke.informacoesNinja();
         sasuke.habilidadeEspecial();
+        sasuke.sharinganAtivado();
 
         System.out.println("-------------------------");
 

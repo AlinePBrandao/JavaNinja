@@ -28,7 +28,8 @@ public abstract class Ninja implements EstrategiaDeBatalha{
     //NOTE: todos os ninjas terão informações obrigatorias, esse é um método não abstrato
     public void informacoesNinjaUzumaki(){
         System.out.println("Meu nome é " + nome + " tenho " + idade + " anos");
-        System.out.println("Pertenço a " + aldeia);
+        System.out.println("Pertenço a " + aldeia + ", concluí " + numeroMissoesConcluidas + " missões");
+        System.out.println("Meu nível ninja é " + rank);
         System.out.println();
     }
 
@@ -51,7 +52,6 @@ public abstract class Ninja implements EstrategiaDeBatalha{
     @Override
     public void estrategiaDeBatalha() {
         System.out.println("Essa é a minha estratégia de batalha");
-        System.out.println("--------");
     }
 
     //NOTE: sobrecarga do método sem parâmetro
