@@ -1,6 +1,6 @@
 package Intermediario.Polimorfismo;
 
-public class Uchiha extends Ninja{
+public class Uchiha extends Ninja implements SharinganInterface{
 
     public Uchiha() {
         super(); //NOTE: super() sem argumentos indica o constructor vazio da super classe.
@@ -31,5 +31,10 @@ public class Uchiha extends Ninja{
     @Override
     public void inteligenciaDeCombate(int qi) {
         super.inteligenciaDeCombate(qi);
+    }
+
+    @Override
+    public void sharinganAtivado() {
+        System.out.println(nome + ": Ativou o Sharingan");
     }
 }
