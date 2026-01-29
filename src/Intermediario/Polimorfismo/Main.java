@@ -3,32 +3,39 @@ package Intermediario.Polimorfismo;
 public class Main {
     public static void main(String[] args) {
 
-        //NOTE: Obj Uzumaki
+        //NOTE: objeto criado usando o consructor com argumentos
         Uzumaki naruto = new Uzumaki("Naruto Uzumaki", "Aldeia da Folha", 16);
         naruto.informacoesNinjaUzumaki();
         naruto.habilidadeEspecial();
         naruto.estrategiaDeBatalha();
 
-        //NOTE: Obj Uchiha
+        System.out.println("-------------------------");
+
         Uchiha sasuke = new Uchiha("Sasuke Uchiha", "Aldeia da Folha", 18, 20, NivelNinja.GENIN);
         sasuke.informacoesNinja();
         sasuke.habilidadeEspecial();
 
-        //NOTE: objeto criado usando o consructor com argumentos
+        System.out.println("-------------------------");
+
         Uchiha itachi = new Uchiha("Itachi Uchiha", "Aldeia da Folha", 27, 50, NivelNinja.JOUNNIN);
         itachi.informacoesNinja();
         itachi.habilidadeEspecial();
 
-        //NOTE: sobrecarga de construtores
+        System.out.println("-------------------------");
+
         Uchiha madara = new Uchiha("Madara Uchiha", "Aldeia da Folha", 45, 900, NivelNinja.KAGE);
         madara.informacoesNinja();
         madara.habilidadeEspecial();
         madara.inteligenciaDeCombate();
         madara.inteligenciaDeCombate(155);
 
+        System.out.println("-------------------------");
+
         System.out.println();
         Anbu ninjaAnbu = new Anbu();
         ninjaAnbu.nome = "Ninja Anbu";
         System.out.println(ninjaAnbu.nome);
+
+        System.out.println("-------------------------");
     }
 }
