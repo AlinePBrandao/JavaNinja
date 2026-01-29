@@ -1,6 +1,6 @@
 package Intermediario.Polimorfismo;
 
-public enum Bijus {
+public enum Biju {
 
     SHUKAKU("Shukaku", "Gaara", 1),
     MATATABI("Matatabi","Yugito Nii", 2),
@@ -16,10 +16,10 @@ public enum Bijus {
     String jinchuriki;
     int numeroDeCaldas;
 
-    Bijus() {
+    Biju() {
     }
 
-    Bijus(String nomeBiju, String jinchuriki, int numeroDeCaldas) {
+    Biju(String nomeBiju, String jinchuriki, int numeroDeCaldas) {
         this.nomeBiju = nomeBiju;
         this.jinchuriki = jinchuriki;
         this.numeroDeCaldas = numeroDeCaldas;

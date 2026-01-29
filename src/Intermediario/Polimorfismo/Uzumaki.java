@@ -2,7 +2,7 @@ package Intermediario.Polimorfismo;
 
 public class Uzumaki extends Ninja{
 
-    Bijus bijus;
+    Biju biju;
 
     public Uzumaki() {
         super();
@@ -17,9 +17,9 @@ public class Uzumaki extends Ninja{
     }
 
     //NOTE: sobrecarga com o atributo Bijus que só é referenciada nessa classe
-    public Uzumaki(String nome, String aldeia, int idade, int numeroMissoesConcluidas, NivelNinja rank, Bijus bijus) {
+    public Uzumaki(String nome, String aldeia, int idade, int numeroMissoesConcluidas, NivelNinja rank, Biju biju) {
         super(nome, aldeia, idade, numeroMissoesConcluidas, rank); //NOTE: super vem da superclasse
-        this.bijus = bijus; //NOTE: this vem dessa classe
+        this.biju = biju; //NOTE: this vem dessa classe
     }
 
     @Override
