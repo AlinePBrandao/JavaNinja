@@ -18,6 +18,6 @@ public class Kunai {
 
     @Override
     public String toString() {
-        return "Kunai: " + nome;
+        return "Kunai- " + nome /*+ System.lineSeparator()*/;
     }
 }

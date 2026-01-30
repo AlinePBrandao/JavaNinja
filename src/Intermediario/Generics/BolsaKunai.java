@@ -7,6 +7,7 @@ public class BolsaKunai {
 
     private List<Kunai> kunais;
 
+    //NOTE: Constructor sem List como parâmetro
     public BolsaKunai() {
         this.kunais = new ArrayList<>();
     }
