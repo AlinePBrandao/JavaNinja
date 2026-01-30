@@ -1,4 +1,4 @@
-package Intermediario.Generics;
+package Intermediario.Generics.SemGenerics;
 
 import java.util.ArrayList;
 import java.util.List;

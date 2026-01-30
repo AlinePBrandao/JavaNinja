@@ -1,4 +1,4 @@
-package Intermediario.Generics;
+package Intermediario.Generics.SemGenerics;
 
 public class Main {
     public static void main(String[] args) {

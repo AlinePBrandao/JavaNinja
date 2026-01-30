@@ -1,10 +1,10 @@
-package Intermediario.Generics;
+package Intermediario.Generics.ComGenerics;
 
-public class Kunai {
+public class EquipamentosNinja {
 
     private String nome;
 
-    public Kunai(String nome) {
+    public EquipamentosNinja(String nome) {
         this.nome = nome;
     }
 
@@ -18,6 +18,6 @@ public class Kunai {
 
     @Override
     public String toString() {
-        return "Kunai- " + nome /*+ System.lineSeparator()*/;
+        return nome;
     }
 }
