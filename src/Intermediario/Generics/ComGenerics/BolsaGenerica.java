@@ -22,12 +22,20 @@ public class BolsaGenerica <T>{
     }
 
     //NOTE: Colocar equipamentos Genéricos
-    public void adicionarEquipamentos(T equipamentoGenerico){
-        equipamentos.add(equipamentoGenerico);
+    public void adicionarEquipamentos(T equipamento){
+        equipamentos.add(equipamento);
     }
 
     @Override
     public String toString() {
         return "Bolsa de equipamentos: " + equipamentos.toString();
     }
+
+    /*//NOTE: Mostrar a lista
+    * public void mostrarEquipamentos(){
+    *   for(T equipamento : equipamentos){
+    *       System.out.println(equipamento);
+    *   }
+    * }
+    * */
 }
