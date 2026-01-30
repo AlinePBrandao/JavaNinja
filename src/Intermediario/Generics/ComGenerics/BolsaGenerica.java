@@ -22,8 +22,8 @@ public class BolsaGenerica <T>{
     }
 
     //NOTE: Colocar equipamentos Genéricos
-    public void adicionarEquipamentos(T equipamento){
-        equipamentos.add(equipamento);
+    public void adicionarEquipamentos(T equipamentoGenerico){
+        equipamentos.add(equipamentoGenerico);
     }
 
     @Override
