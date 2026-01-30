@@ -30,12 +30,4 @@ public class BolsaGenerica <T>{
     public String toString() {
         return "Bolsa de equipamentos: " + equipamentos.toString();
     }
-
-    /*//NOTE: Mostrar a lista
-    * public void mostrarEquipamentos(){
-    *   for(T equipamento : equipamentos){
-    *       System.out.println(equipamento);
-    *   }
-    * }
-    * */
 }
