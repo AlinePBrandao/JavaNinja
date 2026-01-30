@@ -1,17 +1,14 @@
 package Intermediario.Generics;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BolsaKunai {
 
     private List<Kunai> kunais;
 
-    public BolsaKunai(List<Kunai> kunais) {
-        this.kunais = kunais;
-    }
-
-    public void adicionarKunai(Kunai kunai){
-        kunais.add(kunai);
+    public BolsaKunai() {
+        this.kunais = new ArrayList<>();
     }
 
     public List<Kunai> getKunais() {
@@ -20,6 +17,10 @@ public class BolsaKunai {
 
     public void setKunais(List<Kunai> kunais) {
         this.kunais = kunais;
+    }
+
+    public void adicionarKunai(Kunai kunai){
+        kunais.add(kunai);
     }
 
     @Override
