@@ -9,11 +9,14 @@ public class Main {
 
         //NOTE: Array -> Estaticos e com ref de memoria
         String[] ninjasArray = new String[3];
-        ninjasArray[0] = "Naruto Uzumaki";
+        ninjasArray[0] = "Naruto Uzumaki Array";
+        System.out.println(ninjasArray[0]);
 
         //NOTE: Lists -> Dinamicas
         List<String> ninjasList = new ArrayList<>();
-        ninjasList.add("Naruto Uzumaki");
+        ninjasList.add("Naruto Uzumaki List");
+        System.out.println(ninjasList);
+        System.out.println();
 
         //NOTE: Stack -> O ultimo elemento a entrar é o primeiro a sair
         Stack<String> ninjaStack = new Stack<>();
