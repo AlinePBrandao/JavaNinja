@@ -17,16 +17,24 @@ public class Main {
 
         //NOTE: Stack -> O ultimo elemento a entrar é o primeiro a sair
         Stack<String> ninjaStack = new Stack<>();
+
+        //NOTE: verificando lista vazia
+        if (ninjaStack.isEmpty()){
+            System.out.println("A pilha está vazia!");
+            System.out.println();
+        }
+
+        //NOTE: adicionando elementos na lista
         ninjaStack.push("Naruto");
         ninjaStack.push("Sasuke");
         ninjaStack.push("Sakura");
         ninjaStack.push("Hinata");
-        System.out.println("Minha Stack Atual: " + ninjaStack);
-        System.out.println("Tamanho da Stack é: " + ninjaStack.size() + " elementos");
+        System.out.println("Minha Stack Atual: " + ninjaStack); //NOTE: verificando elementos na lista
+        System.out.println("Tamanho da Stack é: " + ninjaStack.size() + " elementos"); //NOTE: tamanho da lista
         System.out.println();
 
-        System.out.println("Meu último elemento é: " + ninjaStack.peek());
-        System.out.println("Removendo último elemento: " + ninjaStack.pop());
+        System.out.println("Meu último elemento é: " + ninjaStack.peek()); //NOTE: verificando ultimo elemento da lista
+        System.out.println("Removendo último elemento: " + ninjaStack.pop()); //NOTE: removendo ultimo elemento da lista
         System.out.println();
 
         System.out.println("Minha Stack Atualizada: " + ninjaStack);
