@@ -16,6 +16,8 @@ public class Ninja {
         this.telefone = telefone;
     }
 
+    //NOTE: sem setter porque já que atributos são final, não há um novo valor para atribuir
+
     public String getNome() {
         return nome;
     }
