@@ -24,6 +24,9 @@ public class Main {
         System.out.println(linkedList);
 
         //TODO: adicionar um novo ninja no início
+        linkedList.addFirst(new Ninja("Hinata Hyuga", 17, "Konoha"));
+        System.out.println();
+        System.out.println(linkedList);
 
         //TODO: acessar um ninja em uma posição específica da lista
 
