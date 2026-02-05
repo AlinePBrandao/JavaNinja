@@ -18,10 +18,14 @@ public class Main {
 
         System.out.println(linkedList);
 
-
         //TODO: remover o primeiro ninja
+        linkedList.removeFirst();
+        System.out.println();
+        System.out.println(linkedList);
+
         //TODO: adicionar um novo ninja no início
-        //TODO: exibir a lista completa*
+
+        //TODO: acessar um ninja em uma posição específica da lista
 
     }
 }
