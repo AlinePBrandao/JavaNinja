@@ -38,9 +38,9 @@ public class Ninja {
 
     @Override
     public String toString() {
-        return "Ninja" + "nome: " + nome +
-                ", idade: " + idade +
-                ", vila: " + vila +
+        return "Ninja" + " Nome: " + nome +
+                ", Idade: " + idade +
+                ", Vila: " + vila +
                 " \n";
     }
 }

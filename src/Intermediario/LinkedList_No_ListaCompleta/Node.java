@@ -1,4 +1,4 @@
-package Intermediario.Desafio6;
+package Intermediario.LinkedList_No_ListaCompleta;
 
 public class Node<T>{
     T data;

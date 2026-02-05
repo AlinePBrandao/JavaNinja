@@ -1,4 +1,4 @@
-package Intermediario.Desafio6;
+package Intermediario.LinkedList_No_ListaCompleta;
 
 //NOTE: Armazena qualquer tipo de dado
 public class LinkedList<T> {
