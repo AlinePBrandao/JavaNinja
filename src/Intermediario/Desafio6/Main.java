@@ -1,0 +1,27 @@
+package Intermediario.Desafio6;
+
+import java.util.Collection;
+import java.util.LinkedList;
+
+public class Main {
+    public static void main(String[] args) {
+
+        LinkedList<Ninja> linkedList = new LinkedList<>();
+
+        linkedList.add(new Ninja("Naruto Uzumaki", 17, "Konoha"));
+        linkedList.add(new Ninja("Sasuke Uchiha", 17, "Konoha"));
+        linkedList.add(new Ninja("Sakura Haruno", 17, "Konoha"));
+        linkedList.add(new Ninja("Kakashi Hatake", 31, "Konoha"));
+        linkedList.add(new Ninja("Gaara", 17, "Areia"));
+        linkedList.add(new Ninja("Shikamaru Nara", 17, "Konoha"));
+        linkedList.add(new Ninja("Temari", 18, "Areia"));
+
+        System.out.println(linkedList);
+
+
+        //TODO: remover o primeiro ninja
+        //TODO: adicionar um novo ninja no início
+        //TODO: exibir a lista completa*
+
+    }
+}

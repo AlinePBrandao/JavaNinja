@@ -18,6 +18,7 @@ public class Main {
         System.out.println(linkedList);
 
         //NOTE: Classes e Interfaces que implementam Collections:
+
         //NOTE: Classes
         ArrayList<String> arrayList = new ArrayList<>();
         LinkedList<String> linkedList1 = new LinkedList<>();

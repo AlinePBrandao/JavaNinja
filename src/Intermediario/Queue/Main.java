@@ -17,7 +17,7 @@ public class Main {
         ninjasQueue.add("Shikamaro");
 
         //NOTE: acessando elementos da fila
-        System.out.println("Ninjas na fila: " + ninjasQueue);
+        System.out.println("NinjasGenerico na fila: " + ninjasQueue);
 
         //NOTE: acessando quantidade de elementos da fila
         System.out.println("Tamanho da Fila é: " + ninjasQueue.size() + " elementos");
@@ -25,7 +25,7 @@ public class Main {
 
         //NOTE: removendo elementos da fila
         ninjasQueue.poll();
-        System.out.println("Ninjas na fila atualizada: " + ninjasQueue);
+        System.out.println("NinjasGenerico na fila atualizada: " + ninjasQueue);
 
         //NOTE: verificando o primeiro elemento da fila
         System.out.println("Ninja Head: " + ninjasQueue.peek());
@@ -37,7 +37,7 @@ public class Main {
         ninjasQueue.poll();
         ninjasQueue.poll();
         ninjasQueue.poll();
-        System.out.println("Ninjas na fila atualizada: " + ninjasQueue);
+        System.out.println("NinjasGenerico na fila atualizada: " + ninjasQueue);
         ninjasQueue.poll();
 
         //NOTE: verificar se a fila está vazia

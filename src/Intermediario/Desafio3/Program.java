@@ -16,7 +16,7 @@ public class Program {
 
             System.out.println("\n===== Menu Ninja =====");
             System.out.println("1. Cadastrar Ninja");
-            System.out.println("2. Listar Ninjas");
+            System.out.println("2. Listar NinjasGenerico");
             System.out.println("3. Atualizar Habilidade Especial");
             System.out.println("4. Sair");
             System.out.print("Escolha uma opção: ");
@@ -60,7 +60,7 @@ public class Program {
                     else{
                         for (int i=0; i<ninjas.size(); i++){
                             System.out.println();
-                            System.out.println("Ninjas: " + (i + 1));
+                            System.out.println("NinjasGenerico: " + (i + 1));
                             ninjas.get(i).mostrarInformacoes();
                         }
                     }
