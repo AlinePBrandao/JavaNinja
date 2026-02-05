@@ -13,5 +13,8 @@ public class Main {
 
         linkedList.add(1, "Kakashi Hatake"); //NOTE: adicionando passando o index
         System.out.println(linkedList);
+
+        linkedList.remove(2); //NOTE: removendo passando o index
+        System.out.println(linkedList);
     }
 }
