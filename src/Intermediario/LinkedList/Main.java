@@ -11,5 +11,7 @@ public class Main {
         linkedList.add("Sakura Haruno");
         System.out.println(linkedList); //NOTE: mostra os elementos da lista
 
+        linkedList.add(1, "Kakashi Hatake"); //NOTE: adicionando passando o index
+        System.out.println(linkedList);
     }
 }
