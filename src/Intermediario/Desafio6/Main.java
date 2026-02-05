@@ -29,6 +29,8 @@ public class Main {
         System.out.println(linkedList);
 
         //TODO: acessar um ninja em uma posição específica da lista
-
+        linkedList.get(2);
+        System.out.println();
+        System.out.println(linkedList.get(2));
     }
 }
