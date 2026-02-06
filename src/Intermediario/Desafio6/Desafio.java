@@ -55,7 +55,18 @@ public class Desafio {
 //        }
 
         //TODO: busque e retorne informações de um ninja com base no nome, utilizar um algoritmo de busca eficiente
+        System.out.print("Digite o nome do ninja desejado: ");
+        String busca = sc.nextLine();
 
+        Ninja encontrado = buscarPorNome(listadeNinjas, busca);
+
+        if (encontrado != null){
+            System.out.println("Ninja Encontrado");
+            System.out.println(encontrado);
+        }
+        else {
+            System.out.println("Ninja Não Encontrado: ");
+        }
 
         sc.close();
     }
