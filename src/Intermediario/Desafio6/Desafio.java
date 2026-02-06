@@ -27,9 +27,9 @@ public class Desafio {
         System.out.println("3- Aldeia");
         System.out.print("Escolha: ");
         int opcao = sc.nextInt();
+        sc.nextLine(); //NOTE: Para limpar o buffer
 
         //TODO: ordenar a lista de ninjas por diferentes critérios: idade, nome ou vila
-
         switch (opcao){
             case 1:
                 listadeNinjas.sort(Comparator.comparing(Ninja::getNome));
@@ -46,11 +46,26 @@ public class Desafio {
                 System.out.println("---------------Ordenação por Vila---------------");
                 System.out.println(listadeNinjas);
                 break;
+            default:
+                System.out.println("Opção Inválida");
         }
 
+//        for (Ninja ninja : listadeNinjas){
+//            System.out.println(ninja);
+//        }
 
         //TODO: busque e retorne informações de um ninja com base no nome, utilizar um algoritmo de busca eficiente
 
+
         sc.close();
+    }
+    //NOTE: metodo para ignorar padrões diferentes dentro da lista de ninjas
+    public static Ninja buscarPorNome(LinkedList<Ninja> lista, String nome){
+        for (Ninja ninja : lista){
+            if (ninja.getNome().equalsIgnoreCase(nome)){
+                return ninja;
+            }
+        }
+        return null;
     }
 }
