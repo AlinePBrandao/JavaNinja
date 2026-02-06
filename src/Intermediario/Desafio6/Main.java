@@ -3,9 +3,12 @@ package Intermediario.Desafio6;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
 
         LinkedList<Ninja> listadeNinjas = new LinkedList<>();
 
@@ -41,21 +44,6 @@ public class Main {
         listadeNinjas.get(2);
         System.out.println();
         System.out.println(listadeNinjas.get(2));
-
-        //TODO: ordenar a lista de ninjas por diferentes critérios: idade, nome ou vila
-        listadeNinjas.sort(Comparator.comparing(Ninja::getNome));
-        System.out.println("---------------Ordenação por Nome---------------");
-        System.out.println(listadeNinjas);
-        listadeNinjas.sort(Comparator.comparing(Ninja::getIdade));
-        System.out.println("---------------Ordenação por Idade---------------");
-        System.out.println(listadeNinjas);
-        listadeNinjas.sort(Comparator.comparing(Ninja::getVila));
-        System.out.println("---------------Ordenação por Vila---------------");
-        System.out.println(listadeNinjas);
-        //TODO: oferecer ao usuário a opção de escolher o critério de ordenação que reorganiza a lista
-
-        //TODO: busque e retorne informações de um ninja com base no nome, utilizar um algoritmo de busca eficiente
-
 
     }
 }
