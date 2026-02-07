@@ -17,6 +17,15 @@ public class TreeSet {
 
         System.out.println(ninjasSet);
 
+        //NOTE: Elementos em ordem de inserção
+        Set<String> ninjasLinkedHashSet = new LinkedHashSet<>();
+        ninjasLinkedHashSet.add("Naruto Uzumaki");
+        ninjasLinkedHashSet.add("Sasuke Uchiha");
+        ninjasLinkedHashSet.add("Sakura Haruno");
+        ninjasLinkedHashSet.add("Hinata Hyuga");
+        ninjasLinkedHashSet.add("Kakashi Hatake");
+        ninjasLinkedHashSet.add("Boruto Uzumaki");
 
+        System.out.println(ninjasLinkedHashSet);
     }
 }
