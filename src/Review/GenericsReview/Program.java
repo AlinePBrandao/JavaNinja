@@ -24,5 +24,8 @@ public class Program {
         System.out.println();
         System.out.println("Quantidade atual: " +  productWarehouse.quantidadeProduto());
 
+        System.out.println();
+        System.out.println("Removendo: " + caderno.nome);
+        productWarehouse.removerProduto(caderno);
     }
 }

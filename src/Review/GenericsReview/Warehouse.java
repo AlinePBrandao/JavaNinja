@@ -25,7 +25,6 @@ public class Warehouse<T> {
 
     public void removerProduto(T produto){
         this.produto.remove(produto);
-        System.out.println("Produto: " + produto);
     }
 
     public void buscarProduto(int indiceProduto){
