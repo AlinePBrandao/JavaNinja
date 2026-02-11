@@ -40,7 +40,4 @@ public class Warehouse<T> {
             System.out.println(produto);
         }
     }
-
-
-
 }
