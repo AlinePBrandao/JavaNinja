@@ -4,10 +4,12 @@ import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+
+        Warehouse<Product> productWarehouse = new Warehouse<>();
+        Product lapis = new Product("Lápis", 2.50);
+        Product caderno = new Product("Caderno", 12.00);
+        Product mochila = new Product("Mochila", 89.90);
 
 
-
-        sc.close();
     }
 }

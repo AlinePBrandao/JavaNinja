@@ -1,13 +1,14 @@
 package Review.GenericsReview;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Warehouse<T> {
 
     private List<T> produto;
 
-    public Warehouse(List<T> produto) {
-        this.produto = produto;
+    public Warehouse() {
+        this.produto =  new ArrayList<>();
     }
 
     public List<T> getProduto() {
@@ -24,10 +25,12 @@ public class Warehouse<T> {
 
     public void removerProduto(T produto){
         this.produto.remove(produto);
+        System.out.println("Produto: " + produto);
     }
 
     public void buscarProduto(int indiceProduto){
         this.produto.get(indiceProduto);
+
     }
 
     public int quantidadeProduto(){
