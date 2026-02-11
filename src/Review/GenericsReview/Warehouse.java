@@ -29,8 +29,7 @@ public class Warehouse<T> {
     }
 
     public void buscarProduto(int indiceProduto){
-        this.produto.get(indiceProduto);
-
+        System.out.println(produto.get(indiceProduto));
     }
 
     public int quantidadeProduto(){

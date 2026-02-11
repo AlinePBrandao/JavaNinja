@@ -17,5 +17,9 @@ public class Program {
         System.out.println("Itens no armazém: ");
         productWarehouse.listarProdutos();
 
+        System.out.println();
+        System.out.println("Buscando item no índice 1:" );
+        productWarehouse.buscarProduto(1);
+
     }
 }
