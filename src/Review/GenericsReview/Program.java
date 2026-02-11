@@ -18,8 +18,11 @@ public class Program {
         productWarehouse.listarProdutos();
 
         System.out.println();
-        System.out.println("Buscando item no índice 1:" );
+        System.out.println("Buscando item no índice 1:");
         productWarehouse.buscarProduto(1);
+
+        System.out.println();
+        System.out.println("Quantidade atual: " +  productWarehouse.quantidadeProduto());
 
     }
 }
