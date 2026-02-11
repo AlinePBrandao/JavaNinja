@@ -10,6 +10,9 @@ public class Program {
         Product caderno = new Product("Caderno", 12.00);
         Product mochila = new Product("Mochila", 89.90);
 
+        productWarehouse.adicionarProduto(lapis);
+        productWarehouse.adicionarProduto(caderno);
+        productWarehouse.adicionarProduto(mochila);
 
     }
 }
