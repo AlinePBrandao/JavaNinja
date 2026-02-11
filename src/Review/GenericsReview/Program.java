@@ -27,5 +27,9 @@ public class Program {
         System.out.println();
         System.out.println("Removendo: " + caderno.nome);
         productWarehouse.removerProduto(caderno);
+
+        System.out.println();
+        System.out.println("Quantidade após remoção: " + productWarehouse.quantidadeProduto());
+        productWarehouse.listarProdutos();
     }
 }
