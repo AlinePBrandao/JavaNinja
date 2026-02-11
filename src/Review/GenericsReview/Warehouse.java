@@ -22,12 +22,24 @@ public class Warehouse<T> {
         this.produto.add(produto);
     }
 
-
-
-    @Override
-    public String toString() {
-        return "Produtos: " + produto;
+    public void removerProduto(T produto){
+        this.produto.remove(produto);
     }
+
+    public void buscarProduto(int indiceProduto){
+        this.produto.get(indiceProduto);
+    }
+
+    public int quantidadeProduto(){
+        return produto.size();
+    }
+
+    public void listarProdutos(){
+        for (T produto : this.produto){
+            System.out.println(produto);
+        }
+    }
+
 
 
 }
