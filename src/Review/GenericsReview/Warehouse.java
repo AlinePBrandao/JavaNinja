@@ -1,22 +1,33 @@
 package Review.GenericsReview;
 
-public class Warehouse {
+import java.util.List;
 
-    private String produto;
+public class Warehouse<T> {
 
-    public Warehouse(String produto) {
+    private List<T> produto;
+
+    public Warehouse(List<T> produto) {
         this.produto = produto;
     }
 
-    public String getProduto() {
+    public List<T> getProduto() {
         return produto;
     }
 
-    public void setProduto(String produto) {
+    public void setProduto(List<T> produto) {
         this.produto = produto;
     }
 
+    public void adicionarProduto(T produto){
+        this.produto.add(produto);
+    }
+
+
+
+    @Override
     public String toString() {
-        return produto;
+        return "Produtos: " + produto;
     }
+
+
 }
