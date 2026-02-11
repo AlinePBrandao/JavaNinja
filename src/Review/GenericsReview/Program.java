@@ -14,5 +14,8 @@ public class Program {
         productWarehouse.adicionarProduto(caderno);
         productWarehouse.adicionarProduto(mochila);
 
+        System.out.println("Itens no armazém: ");
+        productWarehouse.listarProdutos();
+
     }
 }
