@@ -22,5 +22,9 @@ public class Program {
             System.out.println(p);
         }
 
+        System.out.println();
+        System.out.println("Produto Mais Caro: ");
+        System.out.println(catalogo.produtoMaisCaro());
+
     }
 }
