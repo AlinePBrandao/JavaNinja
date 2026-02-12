@@ -1,20 +1,28 @@
 package Review.RecordsReview;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CatalogoProdutos {
 
-    List<Produto> produtos;
+    private List<Produto> produtos = new ArrayList<>();
 
-    void adicionarProduto(Produto produto){
-        produtos.add(produto);
+    public void adicionarProduto(Produto p){
+        produtos.add(p);
     }
 
-    List<Produto> buscarPorCategoria(String categoria){
-        return produtos;
+    public List<Produto> buscarPorCategoria(String categoria){
+        List<Produto> encontrado = new ArrayList<>();
+
+        for (Produto p : produtos){
+            if (p.categoria().equalsIgnoreCase(categoria)) {
+                encontrado.add(p);
+            }
+        }
+        return encontrado;
     }
 
-    Produto produtoMaisCaro(){
+        public Produto produtoMaisCaro(){
         if (produtos.isEmpty()){
             return null;
         }
@@ -30,7 +38,8 @@ public class CatalogoProdutos {
     }
 
     void exibirProdutos(){
-        System.out.println("Produtos: " + produtos);
+        for (Produto p : produtos) {
+            System.out.println(p);
+        }
     }
-
 }
