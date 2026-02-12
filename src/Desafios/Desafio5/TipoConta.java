@@ -1,4 +1,4 @@
-package Intermediario.Desafio5;
+package Desafios.Desafio5;
 
 public enum TipoConta {
     CORRENTE,

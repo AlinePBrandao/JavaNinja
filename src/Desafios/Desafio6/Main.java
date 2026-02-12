@@ -1,7 +1,5 @@
-package Intermediario.Desafio6;
+package Desafios.Desafio6;
 
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.Scanner;
 

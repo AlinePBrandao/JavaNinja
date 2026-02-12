@@ -1,4 +1,4 @@
-package Intermediario.Desafio6;
+package Desafios.Desafio6;
 
 import java.util.Comparator;
 import java.util.LinkedList;

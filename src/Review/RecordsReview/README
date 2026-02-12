@@ -1,0 +1,67 @@
+# 📘 Desafio: Catálogo de Produtos com Java Records
+
+Você deverá criar um mini-sistema de catálogo de produtos utilizando **Java Records** para representar os dados e classes tradicionais para regras de negócio.
+
+---
+
+## ✅ Requisitos do Desafio
+
+### 🟦 1. Criar o `record` **Produto**
+
+O record deve conter os seguintes campos:
+
+- `String nome`
+- `double preco`
+- `String categoria`
+
+#### Regras:
+
+O construtor compacto deve validar:
+
+- `nome` não pode ser nulo ou vazio.
+- `preco` deve ser maior que 0.
+- `categoria` não pode ser vazia.
+
+---
+
+### 🟩 2. Criar a classe **CatalogoProdutos**
+
+A classe deverá:
+
+- Manter uma lista interna de produtos (`List<Produto>`).
+- Implementar os seguintes métodos:
+
+| Método                             | Descrição |
+|-----------------------------------|-----------|
+| `void adicionarProduto(Produto p)` | Adiciona um novo produto ao catálogo. |
+| `List<Produto> buscarPorCategoria(String categoria)` | Retorna os produtos da categoria informada. |
+| `Produto produtoMaisCaro()` | Retorna o produto mais caro da lista. |
+| `void exibirProdutos()` | Exibe todos os produtos cadastrados. |
+
+---
+
+### 🟧 3. Criar a classe **Main**
+
+Na classe `Main`, você deve:
+
+- Instanciar um catálogo.
+- Adicionar pelo menos **5 produtos** utilizando o record.
+- Buscar e exibir produtos de uma categoria.
+- Exibir o produto mais caro.
+- Exibir todos os produtos cadastrados.
+
+---
+
+### ⭐ Desafio Extra (Opcional)
+
+Crie um segundo record:
+
+```java
+record Fabricante(String nome, String pais) { }
+
+E então:
+
+- Adicione Fabricante ao record Produto.
+- Implemente uma busca por país do fabricante.
+
+---
