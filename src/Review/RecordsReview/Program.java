@@ -7,6 +7,11 @@ public class Program {
 
        CatalogoProdutos catalogo = new CatalogoProdutos();
 
+        catalogo.adicionarProduto(new Produto("Lapis", 1.0, "Papelaria", new Produto.Fabricante("Faber","Brasil")));
+        catalogo.adicionarProduto(new Produto("Borracha", 0.5, "Papelaria", new Produto.Fabricante("Cis", "Colombia")));
+        catalogo.adicionarProduto(new Produto("Tinta", 100.0, "Reforma e Construção", new Produto.Fabricante("Suvinil", "Brasil")));
+        catalogo.adicionarProduto(new Produto("Ração para Cães", 200.0, "Animais", new Produto.Fabricante("Formula Natural", "França")));
+        catalogo.adicionarProduto(new Produto("Esponja", 3.0, "Utilidades do Lar", new Produto.Fabricante("BomBril", "Colombia")));
 
        catalogo.exibirProdutos();
 
