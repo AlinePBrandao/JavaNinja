@@ -26,5 +26,11 @@ public class Program {
         System.out.println("Produto Mais Caro: ");
         System.out.println(catalogo.produtoMaisCaro());
 
+        System.out.println();
+        System.out.println("País do Fabricante: Colombia");
+        List<Produto> colombia = catalogo.buscarPorPais("Colombia");
+        for (Produto f : colombia) {
+            System.out.println(f);
+        }
     }
 }
