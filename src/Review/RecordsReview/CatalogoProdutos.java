@@ -22,20 +22,21 @@ public class CatalogoProdutos {
         return encontrado;
     }
 
-        public Produto produtoMaisCaro(){
-        if (produtos.isEmpty()){
-            return null;
-        }
-        //NOTE: ler do primeiro elemento
-        Produto maisCaro = produtos.get(0);
-
-        for (Produto p : produtos) {
-            if (p.preco() > maisCaro.preco()){
-                maisCaro = p;
-            }
-        }
-        return maisCaro;
+    public Produto produtoMaisCaro(){
+    if (produtos.isEmpty()){
+        return null;
     }
+    //NOTE: ler do primeiro elemento
+    Produto maisCaro = produtos.get(0);
+
+    for (Produto p : produtos) {
+        if (p.preco() > maisCaro.preco()){
+            maisCaro = p;
+        }
+    }
+    return maisCaro;
+    }
+
 
     void exibirProdutos(){
         for (Produto p : produtos) {
