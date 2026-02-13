@@ -1,0 +1,106 @@
+# 📘 Desafio: Sistema de Biblioteca com Records e OOP
+
+Você deverá criar um mini-sistema de gerenciamento de livros em uma biblioteca usando:
+
+- **Records** para representar dados imutáveis
+- **Classes tradicionais** para regras e operações
+- **Interfaces** para um comportamento comum entre diferentes tipos de itens
+- **Herança simples** para especializar itens da biblioteca
+
+---
+
+## 📘 Descrição do Sistema
+
+A Biblioteca poderá cadastrar diversos itens, mas por enquanto trabalharemos com **Livros** e **Revistas**.
+
+---
+
+### 🟦 1. 1. Interface `ItemBiblioteca`
+
+Crie uma interface com:
+
+- `String titulo();`
+- `String categoria();`
+
+Ela será implementada por vários tipos de itens.
+
+---
+
+### 🟩 2. Record `Livro`
+
+Use um record para representar um livro com:
+
+- `String titulo`
+- `String autor`
+- `int paginas`
+- `String categoria`
+
+Validações obrigatórias no construtor compacto:
+
+- `titulo` não pode ser vazio
+- `autor` não pode ser vazio
+- `paginas` deve ser maior que 10
+- `categoria` não pode ser vazia
+
+Implemente a interface `ItemBiblioteca`.
+
+---
+
+### 🟧 3. Classe `Revista`
+
+A revista **não será record**, pois será um item que pode mudar.
+
+A classe deve ter:
+
+- `String titulo`
+- `int edicao`
+- `String categoria`
+
+Validações no construtor tradicional.
+
+Também deverá implementar **ItemBiblioteca**.
+
+---
+
+### 🟨 4. Classe `Biblioteca`
+
+A classe terá:
+
+- Um atributo `List<ItemBiblioteca> itens`
+
+Métodos:
+
+- `void adicionarItem(ItemBiblioteca item)`
+- `List<ItemBiblioteca> buscarPorCategoria(String categoria)`
+- `ItemBiblioteca buscarPorTitulo(String titulo)`
+- `void listarItens()`
+
+Tudo sem streams:
+
+- Use loops `for`
+- Use `instanceof` somente se quiser identificar o tipo (opcional)
+
+---
+
+### 🟥 5. Classe `Main`
+
+- Crie uma biblioteca
+- Adicione pelo menos:
+    - 2 livros
+    - 2 revistas
+- Busque por categoria
+- Busque por títul
+- Liste todos os itens
+
+---
+
+### ⭐ Desafio Extra (Opcional)
+
+Crie um record **Autor** com:
+
+- `String nome`
+- `String nacionalidade`
+
+E modifique `Livro` para receber um Autor em vez de uma String autor.
+
+---

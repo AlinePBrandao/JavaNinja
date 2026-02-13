@@ -1,4 +1,4 @@
-package Review.RecordsReview;
+package Review.RecordsReview.Catalogo;
 
 public record Produto(String nome, double preco, String categoria, Fabricante fabricante) {
 
