@@ -37,6 +37,15 @@ public class CatalogoProdutos {
     return maisCaro;
     }
 
+    public List<Produto> buscarPorPais(String pais){
+        List<Produto> paisEncontrado = new ArrayList<>();
+
+        for (Produto f : produtos){
+            if (f.fabricante().pais().equalsIgnoreCase(pais)){
+                paisEncontrado.add(f);
+            }
+        }    return paisEncontrado;
+    }
 
     void exibirProdutos(){
         for (Produto p : produtos) {
