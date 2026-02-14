@@ -6,6 +6,33 @@ public class Revista implements ItemBiblioteca {
     int edicao;
     String categoria;
 
+    public Revista(String titulo, int edicao, String categoria){
+        this.titulo = titulo;
+        this.edicao = edicao;
+        this.categoria = categoria;
+    }
+
+    public String getTitulo(){
+        return titulo;
+    }
+    public void setTitulo(String titulo){
+        this.titulo = titulo;
+    }
+
+    public int getEdicao() {
+        return edicao;
+    }
+    public void setEdicao(int edicao) {
+        this.edicao = edicao;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
     @Override
     public String titulo() {
         return "";
@@ -15,5 +42,4 @@ public class Revista implements ItemBiblioteca {
     public String categoria() {
         return "";
     }
-
 }
