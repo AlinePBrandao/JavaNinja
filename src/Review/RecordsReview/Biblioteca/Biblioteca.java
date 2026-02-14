@@ -11,4 +11,14 @@ public class Biblioteca {
         itens.add(item);
     }
 
+    public List<ItemBiblioteca> buscarPorCategoria(String categoria){
+        List<ItemBiblioteca> categoriaEncontrada = new ArrayList<>();
+
+        for (ItemBiblioteca item : itens){
+            if (item.categoria().equalsIgnoreCase(categoria)){
+                categoriaEncontrada.add(item);
+            }
+        }
+        return categoriaEncontrada;
+    }
 }
