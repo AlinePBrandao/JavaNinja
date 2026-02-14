@@ -33,4 +33,10 @@ public class Biblioteca {
         }
         return null;
     }
+
+    public void listarItens(){
+        for (ItemBiblioteca item : itens){
+            System.out.println(item);
+        }
+    }
 }
