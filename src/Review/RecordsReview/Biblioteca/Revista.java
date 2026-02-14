@@ -45,6 +45,6 @@ public class Revista implements ItemBiblioteca{
 
     @Override
     public String toString() {
-        return "Revista[ título= " + titulo + ", edição= " + edicao + ", categoria=" + categoria + "]";
+        return "Revista[título= " + titulo + ", edição= " + edicao + ", categoria=" + categoria + "]";
     }
 }

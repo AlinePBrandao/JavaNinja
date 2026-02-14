@@ -9,6 +9,9 @@ public class Program {
         biblioteca.adicionarItem(new Revista("Capricho", 27, "Variedades"));
         biblioteca.adicionarItem(new Revista("Turma da Mônica", 50, "Historia em Quadrinhos"));
 
+        System.out.println("Itens Cadastrados: ");
+        biblioteca.listarItens();
+
 
     }
 }
