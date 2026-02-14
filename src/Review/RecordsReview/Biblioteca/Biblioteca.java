@@ -21,4 +21,16 @@ public class Biblioteca {
         }
         return categoriaEncontrada;
     }
+
+    public ItemBiblioteca buscarPorTitulo(String titulo){
+        List<ItemBiblioteca> tituloEncontrado = new ArrayList<>();
+
+        for (ItemBiblioteca item : itens){
+            if (item.titulo().equalsIgnoreCase(titulo)){
+                tituloEncontrado.add(item);
+                System.out.println(tituloEncontrado);
+            }
+        }
+        return null;
+    }
 }
