@@ -35,12 +35,12 @@ public class Revista implements ItemBiblioteca{
 
     @Override
     public String titulo() {
-        return "";
+        return titulo;
     }
 
     @Override
     public String categoria() {
-        return "";
+        return categoria;
     }
 
     @Override
