@@ -1,5 +1,7 @@
 package Review.RecordsReview.Biblioteca;
 
+import java.util.List;
+
 public class Program {
     public static void main(String[] args) {
 
@@ -11,6 +13,13 @@ public class Program {
 
         System.out.println("Itens Cadastrados: ");
         biblioteca.listarItens();
+
+        System.out.println();
+        System.out.println("Buscando item por Categoria: Ação");
+        List<ItemBiblioteca> item = biblioteca.buscarPorCategoria("Ação");
+        for (ItemBiblioteca encontrado : item) {
+            System.out.println(encontrado);
+        }
 
 
     }
