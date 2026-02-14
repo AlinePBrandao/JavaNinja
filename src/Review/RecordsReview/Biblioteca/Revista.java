@@ -3,8 +3,8 @@ package Review.RecordsReview.Biblioteca;
 public class Revista implements ItemBiblioteca{
 
     private String titulo;
-    int edicao;
-    String categoria;
+    private int edicao;
+    private String categoria;
 
     public Revista(String titulo, int edicao, String categoria){
         this.titulo = titulo;
