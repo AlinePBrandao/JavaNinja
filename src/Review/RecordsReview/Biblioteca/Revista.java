@@ -1,6 +1,6 @@
 package Review.RecordsReview.Biblioteca;
 
-public class Revista implements ItemBiblioteca {
+public class Revista implements ItemBiblioteca{
 
     private String titulo;
     int edicao;
@@ -41,5 +41,10 @@ public class Revista implements ItemBiblioteca {
     @Override
     public String categoria() {
         return "";
+    }
+
+    @Override
+    public String toString() {
+        return "Revista[ título= " + titulo + ", edição= " + edicao + ", categoria=" + categoria + "]";
     }
 }

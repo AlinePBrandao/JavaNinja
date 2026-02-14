@@ -8,5 +8,7 @@ public class Program {
         biblioteca.adicionarItem(new Livro("A Hora da Estrela", "Clarice Lispector", 120, "Ficção"));
         biblioteca.adicionarItem(new Revista("Capricho", 27, "Variedades"));
         biblioteca.adicionarItem(new Revista("Turma da Mônica", 50, "Historia em Quadrinhos"));
+
+
     }
 }
