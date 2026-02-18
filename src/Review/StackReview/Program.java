@@ -1,8 +1,8 @@
-package Review;
+package Review.StackReview;
 
 import java.util.Stack;
 
-public class StackReview {
+public class Program {
     public static void main(String[] args) {
 
         Stack<String> stack = new Stack<>();
@@ -15,6 +15,6 @@ public class StackReview {
 
         System.out.println("Minha Stack Atual: " + stack);
 
-        System.out.println(stack.pop());
+        //System.out.println(stack.pop());
     }
 }
