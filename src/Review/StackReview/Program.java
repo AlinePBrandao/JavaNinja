@@ -9,43 +9,54 @@ public class Program {
 
         Stack<String> stack = new Stack<>();
 
-        System.out.println("=== Menu Undo ===");
-        System.out.println("1 - Registrar ação");
-        System.out.println("2 - Desfazer última ação");
-        System.out.println("3 - Listar ações");
-        System.out.println("4 - Sair");
+        int escolha = 0;
 
-        System.out.print("Escolha: ");
-        int escolha = sc.nextInt();
+        while (escolha != 4){
+            System.out.println("=== Menu Undo ===");
+            System.out.println("1 - Registrar ação");
+            System.out.println("2 - Desfazer última ação");
+            System.out.println("3 - Listar ações");
+            System.out.println("4 - Sair");
 
-        switch (escolha){
-            case 1:
-                if (escolha == 1){
+            System.out.print("Escolha: ");
+            escolha = sc.nextInt();
+            sc.nextLine();
+
+            switch (escolha){
+                case 1 -> {
                     System.out.print("Digite a ação: ");
                     String acao = sc.nextLine();
-                    sc.nextLine();
                     stack.push(acao);
                     System.out.println("Ação registrada");
                 }
-            break;
-            case 2:
-                if (escolha == 2) {
-                    System.out.print("Desfeita: ");
-                    String desfeita = sc.nextLine();
-                    stack.pop();
-                    System.out.println("Ação registrada");
+
+                case 2 -> {
+                    if (stack.isEmpty()){
+                        System.out.println("Não há ações para desfazer");
+                    }
+                    else {
+                        String desfeita = stack.pop();
+                        System.out.println("Ação desfeita: " + desfeita);
+                    }
                 }
-            break;
-            case 3:
-                if (escolha == 3) {
-                System.out.println("Ações restantes: " + stack);
+
+                case 3 -> {
+                    if (stack.isEmpty()){
+                        System.out.println("Não há ações registradas");
+                    }
+                    else {
+                        System.out.println("Ações cadastradas: " + stack);
+                    }
+                }
+
+                case 4 -> {
+                    System.out.println("Programa encerrado");
+                }
+                default -> {
+                    System.out.println("Opção inválida");
+                }
             }
-
         }
-
-
-
-
         sc.close();
     }
 }
