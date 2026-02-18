@@ -35,6 +35,12 @@ public class Program {
                     stack.pop();
                     System.out.println("Ação registrada");
                 }
+            break;
+            case 3:
+                if (escolha == 3) {
+                System.out.println("Ações restantes: " + stack);
+            }
+
         }
 
 
