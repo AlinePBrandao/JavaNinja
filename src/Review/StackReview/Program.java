@@ -18,21 +18,24 @@ public class Program {
         System.out.print("Escolha: ");
         int escolha = sc.nextInt();
 
-        switch (escolha) {
+        switch (escolha){
             case 1:
                 if (escolha == 1){
-                    System.out.println("Digite a ação: ");
-                    String escolha1 = sc.nextLine();
-                    stack.push(escolha1);
+                    System.out.print("Digite a ação: ");
+                    String acao = sc.nextLine();
+                    sc.nextLine();
+                    stack.push(acao);
                     System.out.println("Ação registrada");
                 }
-                break;
-
+            break;
+            case 2:
+                if (escolha == 2) {
+                    System.out.print("Desfeita: ");
+                    String desfeita = sc.nextLine();
+                    stack.pop();
+                    System.out.println("Ação registrada");
+                }
         }
-
-
-
-
 
 
 
