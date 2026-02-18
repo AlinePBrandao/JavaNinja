@@ -1,8 +1,14 @@
 package Review.StackReview;
 
-public enum Menu {
-    REGISTRAR,
-    DESFAZER,
-    LISTAR,
-    SAIR
+public class Menu {
+
+    private MenuEnum menu;
+
+    public Menu(MenuEnum menu){
+        this.menu = menu;
+    }
+
+    public void exibirMenu(){
+
+    }
 }
