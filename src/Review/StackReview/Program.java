@@ -7,17 +7,23 @@ public class Program {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("=== Menu Undo ===");
+        System.out.println("1 - Registrar ação");
+        System.out.println("2 - Desfazer última ação");
+        System.out.println("3 - Listar ações");
+        System.out.println("4 - Sair");
+
+        System.out.println("Escolha: ");
+        int escolha = sc.nextInt();
+
+        
+
+
+
         Stack<String> stack = new Stack<>();
 
-        stack.push("Harry");
-        stack.push("Hermione");
-        stack.push("Rone");
-        stack.push("Draco");
-        stack.push("Luna");
 
-        System.out.println("Minha Stack Atual: " + stack);
 
-        //System.out.println(stack.pop());
 
         sc.close();
     }
