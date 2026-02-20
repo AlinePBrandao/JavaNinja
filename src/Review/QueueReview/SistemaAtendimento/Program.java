@@ -11,6 +11,7 @@ public class Program {
         Queue<String> filaClientes = new LinkedList<>();
 
         int opcao = 0;
+
         while(opcao != 5){
             System.out.println("=== Menu Atendimento ===");
             System.out.println("1 - Adicionar cliente à fila");
@@ -19,8 +20,11 @@ public class Program {
             System.out.println("4 - Listar clientes aguardando");
             System.out.println("5 - Sair");
 
+            System.out.println("Escolha: ");
+            opcao = sc.nextInt();
+            sc.nextLine();
 
-        }
+
 
         sc.close();
     }
