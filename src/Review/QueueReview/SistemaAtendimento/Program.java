@@ -47,6 +47,14 @@ public class Program {
                         System.out.println("Próximo cliente na fila: " + filaClientes.peek());
                     }
                     break;
+                case 4:
+                    if (filaClientes.isEmpty()){
+                        System.out.println("Nenhum cliente foi registrado");
+                    }
+                    else {
+                        System.out.println("Clientes na fila: " + filaClientes);
+                    }
+                    break;
 
             }
         }
