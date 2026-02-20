@@ -58,7 +58,8 @@ public class Program {
                 case 5:
                     System.out.println("Programa encerrado");
                     break;
-
+                default:
+                    System.out.println("Opção inválida");
             }
         }
         sc.close();
