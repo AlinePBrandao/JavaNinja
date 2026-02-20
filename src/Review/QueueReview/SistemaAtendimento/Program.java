@@ -55,6 +55,9 @@ public class Program {
                         System.out.println("Clientes na fila: " + filaClientes);
                     }
                     break;
+                case 5:
+                    System.out.println("Programa encerrado");
+                    break;
 
             }
         }
