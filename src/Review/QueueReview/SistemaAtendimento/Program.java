@@ -41,7 +41,11 @@ public class Program {
                     break;
 
                 case 3:
-                    if (filaNormal.isEmpty()){
+                    if (!filaPrioridade.isEmpty()){
+                        String prioritarioAtendido = filaPrioridade.poll();
+                        System.out.println("Cliente prioritário atendido: ");
+                    }
+                    else if (filaNormal.isEmpty()){
                         System.out.println("Nenhum cliente aguardando");
                     }
                     else {
