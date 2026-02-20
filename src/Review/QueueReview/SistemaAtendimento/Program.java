@@ -58,7 +58,7 @@ public class Program {
                     if (!filaPrioridade.isEmpty()){
                         System.out.println("Próximo cliente prioritário na fila: " + filaPrioridade.peek());
                     }
-                    if (filaNormal.isEmpty()){
+                    else if (filaNormal.isEmpty()){
                         System.out.println("Nenhum cliente aguardando");
                     }
                     else {
