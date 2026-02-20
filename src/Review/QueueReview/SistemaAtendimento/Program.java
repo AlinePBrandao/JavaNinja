@@ -30,6 +30,15 @@ public class Program {
                     filaClientes.add(sc.nextLine());
                     System.out.println("Cliente registrado");
                     break;
+                case 2:
+                    if (filaClientes.isEmpty()){
+                        System.out.println("Nenhum cliente foi registrado");
+                    }
+                    else {
+                        String atendido = filaClientes.poll();
+                        System.out.println("Cliente atendido: " + atendido);
+                    }
+                    break;
 
             }
         }
