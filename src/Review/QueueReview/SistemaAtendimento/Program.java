@@ -67,7 +67,10 @@ public class Program {
                     break;
 
                 case 5:
-                    if (filaNormal.isEmpty()){
+                    if (!filaPrioridade.isEmpty()){
+                        System.out.println("Clientes prioritários na fila: " + filaPrioridade);
+                    }
+                    else if (filaNormal.isEmpty()){
                         System.out.println("Nenhum cliente aguardando");
                     }
                     else {
