@@ -8,17 +8,19 @@ public class Program {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        Queue<String> filaClientes = new LinkedList<>();
+        Queue<String> filaNormal = new LinkedList<>();
+        Queue<String> filaPrioridade = new LinkedList<>();
 
         int opcao = 0;
 
-        while(opcao != 5){
+        while(opcao != 6){
             System.out.println("=== Menu Atendimento ===");
-            System.out.println("1 - Adicionar cliente à fila");
-            System.out.println("2 - Atender próximo cliente");
-            System.out.println("3 - Ver próximo da fila");
-            System.out.println("4 - Listar clientes aguardando");
-            System.out.println("5 - Sair");
+            System.out.println("1 - Adicionar cliente normal à fila");
+            System.out.println("2 - Adicionar cliente prioritário à fila");
+            System.out.println("3 - Atender próximo cliente");
+            System.out.println("4 - Ver próximo da fila");
+            System.out.println("5 - Listar clientes aguardando");
+            System.out.println("6 - Sair");
 
             System.out.print("Escolha: ");
             opcao = sc.nextInt();
