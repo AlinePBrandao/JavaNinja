@@ -24,8 +24,15 @@ public class Program {
             opcao = sc.nextInt();
             sc.nextLine();
 
+            switch (opcao){
+                case 1:
+                    System.out.println("Digite o nome do cliente: ");
+                    filaClientes.add(sc.nextLine());
+                    System.out.println("Cliente registrado");
+                    break;
 
-
+            }
+        }
         sc.close();
     }
 }
