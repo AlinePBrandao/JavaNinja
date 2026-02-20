@@ -29,11 +29,18 @@ public class Program {
 
             switch (opcao){
                 case 1:
+                    System.out.print("Digite o nome do cliente prioritário: ");
+                    filaPrioridade.add(sc.nextLine());
+                    System.out.println("Cliente prioritário registrado");
+                    break;
+
+                case 2:
                     System.out.print("Digite o nome do cliente: ");
                     filaNormal.add(sc.nextLine());
                     System.out.println("Cliente registrado");
                     break;
-                case 2:
+
+                case 3:
                     if (filaNormal.isEmpty()){
                         System.out.println("Nenhum cliente aguardando");
                     }
@@ -42,7 +49,8 @@ public class Program {
                         System.out.println("Cliente atendido: " + atendido);
                     }
                     break;
-                case 3:
+
+                case 4:
                     if (filaNormal.isEmpty()){
                         System.out.println("Nenhum cliente aguardando");
                     }
@@ -50,7 +58,8 @@ public class Program {
                         System.out.println("Próximo cliente na fila: " + filaNormal.peek());
                     }
                     break;
-                case 4:
+
+                case 5:
                     if (filaNormal.isEmpty()){
                         System.out.println("Nenhum cliente aguardando");
                     }
@@ -58,9 +67,11 @@ public class Program {
                         System.out.println("Clientes na fila: " + filaNormal);
                     }
                     break;
-                case 5:
+
+                case 6:
                     System.out.println("Programa encerrado");
                     break;
+
                 default:
                     System.out.println("Opção inválida");
             }
