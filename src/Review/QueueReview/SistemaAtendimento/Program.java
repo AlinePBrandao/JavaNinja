@@ -20,19 +20,19 @@ public class Program {
             System.out.println("4 - Listar clientes aguardando");
             System.out.println("5 - Sair");
 
-            System.out.println("Escolha: ");
+            System.out.print("Escolha: ");
             opcao = sc.nextInt();
             sc.nextLine();
 
             switch (opcao){
                 case 1:
-                    System.out.println("Digite o nome do cliente: ");
+                    System.out.print("Digite o nome do cliente: ");
                     filaClientes.add(sc.nextLine());
                     System.out.println("Cliente registrado");
                     break;
                 case 2:
                     if (filaClientes.isEmpty()){
-                        System.out.println("Nenhum cliente foi registrado");
+                        System.out.println("Nenhum cliente aguardando");
                     }
                     else {
                         String atendido = filaClientes.poll();
@@ -41,7 +41,7 @@ public class Program {
                     break;
                 case 3:
                     if (filaClientes.isEmpty()){
-                        System.out.println("Nenhum cliente foi registrado");
+                        System.out.println("Nenhum cliente aguardando");
                     }
                     else {
                         System.out.println("Próximo cliente na fila: " + filaClientes.peek());
@@ -49,7 +49,7 @@ public class Program {
                     break;
                 case 4:
                     if (filaClientes.isEmpty()){
-                        System.out.println("Nenhum cliente foi registrado");
+                        System.out.println("Nenhum cliente aguardando");
                     }
                     else {
                         System.out.println("Clientes na fila: " + filaClientes);
