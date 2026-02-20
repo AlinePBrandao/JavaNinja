@@ -15,6 +15,7 @@ public class Program {
         int opcao = 0;
 
         while(opcao != 6){
+            System.out.println();
             System.out.println("=== Menu Atendimento ===");
             System.out.println("1 - Adicionar cliente prioritário à fila");
             System.out.println("2 - Adicionar cliente normal à fila");
@@ -43,14 +44,14 @@ public class Program {
                 case 3:
                     if (!filaPrioridade.isEmpty()){
                         String prioritarioAtendido = filaPrioridade.poll();
-                        System.out.println("Cliente prioritário atendido: ");
+                        System.out.println("Cliente prioritário atendido: " + prioritarioAtendido);
                     }
-                    else if (filaNormal.isEmpty()){
-                        System.out.println("Nenhum cliente aguardando");
-                    }
-                    else {
+                    else if (!filaNormal.isEmpty()){
                         String atendido = filaNormal.poll();
                         System.out.println("Cliente atendido: " + atendido);
+                    }
+                    else {
+                        System.out.println("Nenhum cliente aguardando");
                     }
                     break;
 
@@ -58,19 +59,25 @@ public class Program {
                     if (!filaPrioridade.isEmpty()){
                         System.out.println("Próximo cliente prioritário na fila: " + filaPrioridade.peek());
                     }
-                    else if (filaNormal.isEmpty()){
-                        System.out.println("Nenhum cliente aguardando");
+                    else if (!filaNormal.isEmpty()){
+                        System.out.println("Próximo cliente na fila: " + filaNormal.peek());
                     }
                     else {
-                        System.out.println("Próximo cliente na fila: " + filaNormal.peek());
+                        System.out.println("Nenhum cliente aguardando");
                     }
                     break;
 
                 case 5:
-                    if (!filaPrioridade.isEmpty()){
-                        System.out.println("Clientes prioritários na fila: " + filaPrioridade);
+                    System.out.println("\n--- Fila Prioritária ---");
+                    if (filaPrioridade.isEmpty()){
+                        System.out.println("Nenhum cliente prioritário aguardando ");
                     }
-                    else if (filaNormal.isEmpty()){
+                    else {
+                        System.out.println(filaPrioridade);
+                    }
+
+                    System.out.println("\n--- Fila Normal ---");
+                    if (filaNormal.isEmpty()){
                         System.out.println("Nenhum cliente aguardando");
                     }
                     else {
