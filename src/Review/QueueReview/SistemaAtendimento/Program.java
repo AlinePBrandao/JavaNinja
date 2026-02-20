@@ -1,6 +1,7 @@
 package Review.QueueReview.SistemaAtendimento;
 
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Scanner;
 
@@ -9,14 +10,14 @@ public class Program {
         Scanner sc = new Scanner(System.in);
 
         Queue<String> filaNormal = new LinkedList<>();
-        Queue<String> filaPrioridade = new LinkedList<>();
+        Queue<String> filaPrioridade = new PriorityQueue<>();
 
         int opcao = 0;
 
         while(opcao != 6){
             System.out.println("=== Menu Atendimento ===");
-            System.out.println("1 - Adicionar cliente normal à fila");
-            System.out.println("2 - Adicionar cliente prioritário à fila");
+            System.out.println("1 - Adicionar cliente prioritário à fila");
+            System.out.println("2 - Adicionar cliente normal à fila");
             System.out.println("3 - Atender próximo cliente");
             System.out.println("4 - Ver próximo da fila");
             System.out.println("5 - Listar clientes aguardando");
@@ -29,32 +30,32 @@ public class Program {
             switch (opcao){
                 case 1:
                     System.out.print("Digite o nome do cliente: ");
-                    filaClientes.add(sc.nextLine());
+                    filaNormal.add(sc.nextLine());
                     System.out.println("Cliente registrado");
                     break;
                 case 2:
-                    if (filaClientes.isEmpty()){
+                    if (filaNormal.isEmpty()){
                         System.out.println("Nenhum cliente aguardando");
                     }
                     else {
-                        String atendido = filaClientes.poll();
+                        String atendido = filaNormal.poll();
                         System.out.println("Cliente atendido: " + atendido);
                     }
                     break;
                 case 3:
-                    if (filaClientes.isEmpty()){
+                    if (filaNormal.isEmpty()){
                         System.out.println("Nenhum cliente aguardando");
                     }
                     else {
-                        System.out.println("Próximo cliente na fila: " + filaClientes.peek());
+                        System.out.println("Próximo cliente na fila: " + filaNormal.peek());
                     }
                     break;
                 case 4:
-                    if (filaClientes.isEmpty()){
+                    if (filaNormal.isEmpty()){
                         System.out.println("Nenhum cliente aguardando");
                     }
                     else {
-                        System.out.println("Clientes na fila: " + filaClientes);
+                        System.out.println("Clientes na fila: " + filaNormal);
                     }
                     break;
                 case 5:
