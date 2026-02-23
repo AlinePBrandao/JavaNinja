@@ -44,6 +44,13 @@ public class Program {
                         tarefasList.add(posicao, tarefa);
                     }
                     break;
+                case 3:
+                    System.out.println("Lista de Tarefas Adicionadas: ");
+
+                    for (int i = 0; i< tarefasList.size(); i++){
+                        System.out.println("Tarefa: " + tarefasList.get(i) + " Índice: " + i);
+                        System.out.println(" Índice: " + i);
+                    }
             }
 
 //            if (tarefasList.isEmpty()){
