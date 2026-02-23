@@ -25,6 +25,14 @@ public class Program {
             escolha = sc.nextInt();
             System.out.println();
 
+            switch (escolha){
+                case 1:
+                    System.out.print("Digite sua tarefa: ");
+                    String tarefa = sc.nextLine();
+                    tarefasList.addLast(tarefa);
+                    break;
+
+            }
 
 
         }
