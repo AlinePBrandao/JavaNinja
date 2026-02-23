@@ -23,7 +23,7 @@ public class Program {
 
             System.out.print("Escolha: ");
             escolha = sc.nextInt();
-            System.out.println();
+            sc.nextLine();
 
             switch (escolha){
                 case 1:
@@ -36,7 +36,7 @@ public class Program {
                     tarefa = sc.nextLine();
                     System.out.print("Digite a posição desejada para essa tarefa: ");
                     int posicao = sc.nextInt();
-                    System.out.println();
+                    sc.nextLine();
 
                     if (posicao > tarefasList.size()){
                         System.out.println("Posição inválida");
@@ -59,21 +59,23 @@ public class Program {
                     System.out.println("2 - Nome ");
                     System.out.print("Opção: ");
                     int exclusao = sc.nextInt();
+                    sc.nextLine();
 
                     if (exclusao == 1){
                         System.out.print("Digite a posição da tarefa para exclusão: ");
                         posicao = sc.nextInt();
-                        System.out.println();
-                        for (Object tarefas : tarefasList){
-                            tarefasList.remove(posicao);
-                        }
+                        sc.nextLine();
+                        tarefasList.remove(posicao);
+                        //TODO: adicionar mensagem de erro para posição inexistente
+
                     }
                     else if (exclusao == 2) {
                         System.out.print("Digite o nome da tarefa para exclusão: ");
                         tarefa = sc.nextLine();
-                        for (Object tarefas : tarefasList){
-                            tarefasList.remove(tarefa);
-                        }
+                        sc.nextLine();
+                        tarefasList.remove(tarefa);
+                        //TODO: adicionar mensagem de erro para nome inexistente
+
                     }
                     else {
                         System.out.println("Opção Inválida");
