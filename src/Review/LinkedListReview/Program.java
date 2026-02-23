@@ -36,6 +36,7 @@ public class Program {
                     tarefa = sc.nextLine();
                     System.out.print("Digite a posição desejada para essa tarefa: ");
                     int posicao = sc.nextInt();
+                    System.out.println();
 
                     if (posicao > tarefasList.size()){
                         System.out.println("Posição inválida");
@@ -56,12 +57,23 @@ public class Program {
                     System.out.println("Como deseja remover sua tarefa? ");
                     System.out.println("1 - Índice ");
                     System.out.println("2 - Nome ");
+                    System.out.print("Opção: ");
                     int exclusao = sc.nextInt();
 
                     if (exclusao == 1){
-
-                    } else if (exclusao == 2) {
-
+                        System.out.print("Digite a posição da tarefa para exclusão: ");
+                        posicao = sc.nextInt();
+                        System.out.println();
+                        for (Object tarefas : tarefasList){
+                            tarefasList.remove(posicao);
+                        }
+                    }
+                    else if (exclusao == 2) {
+                        System.out.print("Digite o nome da tarefa para exclusão: ");
+                        tarefa = sc.nextLine();
+                        for (Object tarefas : tarefasList){
+                            tarefasList.remove(tarefa);
+                        }
                     }
                     else {
                         System.out.println("Opção Inválida");
