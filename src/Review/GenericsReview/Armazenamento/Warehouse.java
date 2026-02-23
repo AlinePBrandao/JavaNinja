@@ -1,4 +1,4 @@
-package Review.GenericsReview;
+package Review.GenericsReview.Armazenamento;
 
 import java.util.ArrayList;
 import java.util.List;

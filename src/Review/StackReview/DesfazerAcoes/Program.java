@@ -1,4 +1,4 @@
-package Review.StackReview;
+package Review.StackReview.DesfazerAcoes;
 
 import java.util.Scanner;
 import java.util.Stack;

@@ -1,4 +1,4 @@
-package Review.GenericsReview;
+package Review.GenericsReview.Armazenamento;
 
 public class Program {
     public static void main(String[] args) {

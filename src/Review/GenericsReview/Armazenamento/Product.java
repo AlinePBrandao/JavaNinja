@@ -1,4 +1,4 @@
-package Review.GenericsReview;
+package Review.GenericsReview.Armazenamento;
 
 public class Product{
     public String nome;
