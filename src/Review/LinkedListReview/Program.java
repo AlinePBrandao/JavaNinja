@@ -37,10 +37,19 @@ public class Program {
                     tarefasList.add(tarefa);
                     System.out.print("Digite a posição desejada para essa tarefa: ");
                     int posicao = sc.nextInt();
-                    tarefasList.add(posicao, tarefa);
+
+                    if (posicao > tarefasList.size()){
+                        System.out.println("Posição inválida");
+                    }
+                    else {
+                        tarefasList.add(posicao, tarefa);
+                    }
                     break;
             }
 
+//            if (tarefasList.isEmpty()){
+//                System.out.println("Você não possui tarefas cadastradas");
+//            }
 
         }
 
