@@ -31,7 +31,14 @@ public class Program {
                     String tarefa = sc.nextLine();
                     tarefasList.addLast(tarefa);
                     break;
-
+                case 2:
+                    System.out.print("Digite sua tarefa: ");
+                    tarefa = sc.nextLine();
+                    tarefasList.add(tarefa);
+                    System.out.print("Digite a posição desejada para essa tarefa: ");
+                    int posicao = sc.nextInt();
+                    tarefasList.add(posicao, tarefa);
+                    break;
             }
 
 
