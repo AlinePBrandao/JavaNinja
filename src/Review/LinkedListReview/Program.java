@@ -51,6 +51,21 @@ public class Program {
                         System.out.println("Tarefa: " + tarefasList.get(i) + " Índice: " + i);
                         System.out.println(" Índice: " + i);
                     }
+                    break;
+                case 4:
+                    System.out.println("Como deseja remover sua tarefa? ");
+                    System.out.println("1 - Índice ");
+                    System.out.println("2 - Nome ");
+                    int exclusao = sc.nextInt();
+
+                    if (exclusao == 1){
+
+                    } else if (exclusao == 2) {
+
+                    }
+                    else {
+                        System.out.println("Opção Inválida");
+                    }
             }
 
 //            if (tarefasList.isEmpty()){
