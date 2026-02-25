@@ -1,14 +1,13 @@
 package Review.LinkedListReview;
 
 import java.util.LinkedList;
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        LinkedList tarefasList = new LinkedList<>();
+        LinkedList<String> tarefasList = new LinkedList<>();
 
         int escolha = 0;
 
