@@ -19,7 +19,10 @@ public class Program {
             System.out.println("3 - Listar tarefas");
             System.out.println("4 - Remover tarefa");
             System.out.println("5 - Buscar tarefa");
-            System.out.println("6 - Sair");
+            System.out.println("6 - Mover tarefa para início da lista");
+            System.out.println("7 - Mover tarefa para fim da lista");
+            System.out.println("8 - Ordenar lista alfabeticamente");
+            System.out.println("9 - Sair");
 
             System.out.print("Escolha: ");
             escolha = sc.nextInt();
