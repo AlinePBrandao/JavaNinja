@@ -30,6 +30,7 @@ public class Program {
                     System.out.print("Digite sua tarefa: ");
                     String tarefa = sc.nextLine();
                     tarefasList.addLast(tarefa);
+                    //TODO: mensagem de sucesso
                     break;
                 case 2:
                     System.out.print("Digite sua tarefa: ");
@@ -43,10 +44,13 @@ public class Program {
                     }
                     else {
                         tarefasList.add(posicao, tarefa);
+                        //TODO: mensagem de sucesso
                     }
                     break;
                 case 3:
                     System.out.println("Lista de Tarefas Adicionadas: ");
+
+                    //TODO: validação de lista vazia
 
                     for (int i = 0; i< tarefasList.size(); i++){
                         System.out.println("Tarefa: " + tarefasList.get(i) + " Índice: " + i);
@@ -63,11 +67,13 @@ public class Program {
 
                     if (exclusao == 1){
                         System.out.print("Digite a posição da tarefa para exclusão: ");
-                        posicao = sc.nextInt();
+                        int pos = sc.nextInt();
                         sc.nextLine();
-                        tarefasList.remove(posicao);
-                        //TODO: adicionar mensagem de erro para posição inexistente
 
+                        boolean removido = (pos >= 0 && pos < tarefasList.size())
+                                ? tarefasList.remove(pos) != null : false;
+                        System.out.println(removido ? "Tarefa removida" : "ìndice inválido");
+                        
                     }
                     else if (exclusao == 2) {
                         System.out.print("Digite o nome da tarefa para exclusão: ");
