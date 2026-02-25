@@ -146,8 +146,13 @@ public class Program {
                     break;
 
                 case 8:
-                    System.out.println("Lista Ordenada: ");
-                    Collections.sort(tarefasList);
+                    if (tarefasList.isEmpty()){
+                        System.out.println("Não há tarefas para ordenar");
+                    }
+                    else {
+                        System.out.println("Lista Ordenada: ");
+                        Collections.sort(tarefasList);
+                    }
                     break;
 
                 case 9:
