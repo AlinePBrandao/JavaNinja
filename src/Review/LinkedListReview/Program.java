@@ -1,6 +1,7 @@
 package Review.LinkedListReview;
 
 import java.util.LinkedList;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Program {
@@ -58,14 +59,14 @@ public class Program {
                     }
                     else {
                         for (int i = 0; i < tarefasList.size(); i++){
-                            System.out.println("Tarefa: " + tarefasList.get(i) + " Índice: " + i);
+                            System.out.println("Tarefa: " + tarefasList.get(i) + "| Índice: " + i);
                         }
                     }
                     break;
 
                 case 4:
                     System.out.println("Como deseja remover sua tarefa? ");
-                    System.out.println("1 - Índice ");
+                    System.out.println("1 - Índice");
                     System.out.println("2 - Nome ");
                     System.out.print("Opção: ");
                     int exclusao = sc.nextInt();
@@ -98,9 +99,7 @@ public class Program {
                     String nome = sc.nextLine();
 
                     if (tarefasList.contains(nome)){
-                        for (int i = 0; i < tarefasList.size(); i++){
-                            System.out.println("Tarefa: " + tarefasList.get(i) + " Índice: " + i);
-                        }
+                        System.out.println("Tarefa: " + nome + "| Índice: " + tarefasList.indexOf(nome));
                     }
                     else {
                         System.out.println("Tarefa não encontrada");
