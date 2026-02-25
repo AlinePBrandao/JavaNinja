@@ -116,11 +116,16 @@ public class Program {
                     String tarefaTop = sc.nextLine();
 
                     tarefasList.addFirst(tarefaTop);
-                    System.out.println("Tarefa adicionada ao topo");
+                    System.out.println("Tarefa adicionada ao topo da lista");
                     break;
 
-//                case 7:
-//                    break;
+                case 7:
+                    System.out.print("Digite a tarefa: ");
+                    String tarefaLast = sc.nextLine();
+
+                    tarefasList.addLast(tarefaLast);
+                    System.out.println("Tarefa adicionada ao fim da lista");
+                    break;
 //
 //                case 8:
 //                    break;
