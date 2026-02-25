@@ -103,6 +103,7 @@ public class Program {
                     String nome = sc.nextLine();
 
                     //NOTE: melhoria para evitar percorrer a list 2 vezes
+                    //NOTE: indexOf percorre todo o indice
                     int indice = tarefasList.indexOf(nome);
                     if (indice != -1){
                         System.out.println("Tarefa: " + nome + "| Índice: " + indice);
@@ -113,11 +114,19 @@ public class Program {
                     break;
 
                 case 6:
-                    System.out.print("Digite a tarefa: ");
+                    System.out.print("Digite o nome da tarefa que deseja mover ao início da lista:: ");
                     String tarefaTop = sc.nextLine();
 
-                    tarefasList.addFirst(tarefaTop);
-                    System.out.println("Tarefa adicionada ao topo da lista");
+                    int indiceMoveTop = tarefasList.indexOf(tarefaTop);
+
+                    if (indiceMoveTop != -1){
+                        tarefasList.remove(indiceMoveTop); //NOTE: remove da posição atual
+                        tarefasList.addFirst(tarefaTop);
+                        System.out.println("Tarefa movida ao topo da lista");
+                    }
+                    else {
+                        System.out.println("Tarefa não encontrada");
+                    }
                     break;
 
                 case 7:
