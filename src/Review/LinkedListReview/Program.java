@@ -30,8 +30,9 @@ public class Program {
                     System.out.print("Digite sua tarefa: ");
                     String tarefa = sc.nextLine();
                     tarefasList.addLast(tarefa);
-                    //TODO: mensagem de sucesso
+                    System.out.println("Tarefa adicionada");
                     break;
+
                 case 2:
                     System.out.print("Digite sua tarefa: ");
                     tarefa = sc.nextLine();
@@ -44,19 +45,25 @@ public class Program {
                     }
                     else {
                         tarefasList.add(posicao, tarefa);
-                        //TODO: mensagem de sucesso
+                        System.out.println("Tarefa adicionada");
                     }
                     break;
+
                 case 3:
                     System.out.println("Lista de Tarefas Adicionadas: ");
 
                     //TODO: validação de lista vazia
-
-                    for (int i = 0; i< tarefasList.size(); i++){
-                        System.out.println("Tarefa: " + tarefasList.get(i) + " Índice: " + i);
-                        System.out.println(" Índice: " + i);
+                    if (tarefasList.isEmpty()){
+                        System.out.println("Você não possui tarefas cadastradas");
+                    }
+                    else {
+                        for (int i = 0; i < tarefasList.size(); i++){
+                            System.out.println("Tarefa: " + tarefasList.get(i) + " Índice: " + i);
+                            System.out.println(" Índice: " + i);
+                        }
                     }
                     break;
+
                 case 4:
                     System.out.println("Como deseja remover sua tarefa? ");
                     System.out.println("1 - Índice ");
@@ -85,11 +92,14 @@ public class Program {
                     else {
                         System.out.println("Opção Inválida");
                     }
+                    break;
+
+                case 5:
+
+
             }
 
-//            if (tarefasList.isEmpty()){
-//                System.out.println("Você não possui tarefas cadastradas");
-//            }
+
 
         }
 
