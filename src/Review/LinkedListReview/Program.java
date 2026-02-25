@@ -40,7 +40,8 @@ public class Program {
                     int posicao = sc.nextInt();
                     sc.nextLine();
 
-                    if (posicao > tarefasList.size()){
+                    //NOTE: valida intervalo completo
+                    if (posicao < 0 || posicao > tarefasList.size()){
                         System.out.println("Posição inválida");
                     }
                     else {
@@ -58,7 +59,7 @@ public class Program {
                     }
                     else {
                         for (int i = 0; i < tarefasList.size(); i++){
-                            System.out.println("Tarefa: " + tarefasList.get(i) + "| Índice: " + i);
+                            System.out.println("Tarefa: " + tarefasList.get(i) + " | Índice: " + i);
                         }
                     }
                     break;
@@ -78,7 +79,7 @@ public class Program {
 
                         boolean removido = (pos >= 0 && pos < tarefasList.size())
                                 ? tarefasList.remove(pos) != null : false;
-                        System.out.println(removido ? "Tarefa removida" : "ìndice inválido");
+                        System.out.println(removido ? "Tarefa removida" : "Índice inválido");
                         
                     }
                     else if (exclusao == 2) {
@@ -97,8 +98,10 @@ public class Program {
                     System.out.print("Digite a tarefa desejada: ");
                     String nome = sc.nextLine();
 
-                    if (tarefasList.contains(nome)){
-                        System.out.println("Tarefa: " + nome + "| Índice: " + tarefasList.indexOf(nome));
+                    //NOTE: melhoria para evitar percorrer a list 2 vezes
+                    int indice = tarefasList.indexOf(nome);
+                    if (indice != -1){
+                        System.out.println("Tarefa: " + nome + "| Índice: " + indice);
                     }
                     else {
                         System.out.println("Tarefa não encontrada");
