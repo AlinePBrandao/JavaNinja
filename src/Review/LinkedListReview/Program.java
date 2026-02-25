@@ -59,7 +59,6 @@ public class Program {
                     else {
                         for (int i = 0; i < tarefasList.size(); i++){
                             System.out.println("Tarefa: " + tarefasList.get(i) + " Índice: " + i);
-                            System.out.println(" Índice: " + i);
                         }
                     }
                     break;
@@ -95,7 +94,17 @@ public class Program {
                     break;
 
                 case 5:
+                    System.out.print("Digite a tarefa desejada: ");
+                    String nome = sc.nextLine();
 
+                    if (tarefasList.contains(nome)){
+                        for (int i = 0; i < tarefasList.size(); i++){
+                            System.out.println("Tarefa: " + tarefasList.get(i) + " Índice: " + i);
+                        }
+                    }
+                    else {
+                        System.out.println("Tarefa não encontrada");
+                    }
 
             }
 
