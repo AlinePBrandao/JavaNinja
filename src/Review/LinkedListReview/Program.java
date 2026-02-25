@@ -114,7 +114,7 @@ public class Program {
                     break;
 
                 case 6:
-                    System.out.print("Digite o nome da tarefa que deseja mover ao início da lista:: ");
+                    System.out.print("Digite o nome da tarefa que deseja mover ao início da lista: ");
                     String tarefaTop = sc.nextLine();
 
                     int indiceMoveTop = tarefasList.indexOf(tarefaTop);
@@ -130,11 +130,19 @@ public class Program {
                     break;
 
                 case 7:
-                    System.out.print("Digite a tarefa: ");
+                    System.out.print("Digite o nome da tarefa que deseja mover ao fim da lista: ");
                     String tarefaLast = sc.nextLine();
 
-                    tarefasList.addLast(tarefaLast);
-                    System.out.println("Tarefa adicionada ao fim da lista");
+                    int indiceMoveLast = tarefasList.indexOf(tarefaLast);
+
+                    if (indiceMoveLast != -1){
+                        tarefasList.remove(indiceMoveLast); //NOTE: remove da posição atual
+                        tarefasList.addLast(tarefaLast);
+                        System.out.println("Tarefa movida ao fim da lista");
+                    }
+                    else {
+                        System.out.println("Tarefa não encontrada");
+                    }
                     break;
 
                 case 8:
