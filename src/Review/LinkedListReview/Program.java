@@ -105,13 +105,16 @@ public class Program {
                     else {
                         System.out.println("Tarefa não encontrada");
                     }
+                    break;
 
+                    case 6:
+                        System.out.println("Programa encerrado");
+                        break;
+
+                default:
+                    System.out.println("Opção inválida");
             }
-
-
-
         }
-
         sc.close();
     }
 }
