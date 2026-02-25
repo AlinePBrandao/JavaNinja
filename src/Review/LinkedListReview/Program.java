@@ -77,11 +77,10 @@ public class Program {
                     }
                     else if (exclusao == 2) {
                         System.out.print("Digite o nome da tarefa para exclusão: ");
-                        tarefa = sc.nextLine();
-                        sc.nextLine();
-                        tarefasList.remove(tarefa);
-                        //TODO: adicionar mensagem de erro para nome inexistente
+                        String nome = sc.nextLine();
 
+                        boolean removido = tarefasList.contains(nome) ? tarefasList.remove(nome) : false;
+                        System.out.println(removido ? "Tarefa removida" : "nome inválido");
                     }
                     else {
                         System.out.println("Opção Inválida");
