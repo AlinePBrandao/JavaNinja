@@ -111,9 +111,23 @@ public class Program {
                     }
                     break;
 
-                    case 6:
-                        System.out.println("Programa encerrado");
-                        break;
+                case 6:
+                    System.out.print("Digite a tarefa: ");
+                    String tarefaTop = sc.nextLine();
+
+                    tarefasList.addFirst(tarefaTop);
+                    System.out.println("Tarefa adicionada ao topo");
+                    break;
+
+//                case 7:
+//                    break;
+//
+//                case 8:
+//                    break;
+
+                case 9:
+                    System.out.println("Programa encerrado");
+                    break;
 
                 default:
                     System.out.println("Opção inválida");
