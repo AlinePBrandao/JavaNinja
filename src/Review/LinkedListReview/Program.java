@@ -1,5 +1,6 @@
 package Review.LinkedListReview;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -126,9 +127,11 @@ public class Program {
                     tarefasList.addLast(tarefaLast);
                     System.out.println("Tarefa adicionada ao fim da lista");
                     break;
-//
-//                case 8:
-//                    break;
+
+                case 8:
+                    System.out.println("Lista Ordenada: ");
+                    Collections.sort(tarefasList);
+                    break;
 
                 case 9:
                     System.out.println("Programa encerrado");
