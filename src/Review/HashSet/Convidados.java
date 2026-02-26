@@ -46,7 +46,7 @@ public class Convidados {
 
                     if (convidados.contains(nomeRemovido)){
                         convidados.remove(nomeRemovido);
-                        System.out.println("COnvidado removido");
+                        System.out.println("Convidado removido");
                     }
                     else {
                         System.out.println("Convidado inexistente");
