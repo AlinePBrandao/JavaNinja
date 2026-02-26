@@ -37,6 +37,13 @@ public class Convidados {
                     break;
                 case 3:
                     System.out.println("Quantidade de convidados: " + convidados.size());
+                    break;
+                case 4:
+                    System.out.println("Programa encerrado");
+                    break;
+
+                default:
+                    System.out.println("Opção Inválida");
             }
         }
 
