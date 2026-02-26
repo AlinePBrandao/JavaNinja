@@ -35,11 +35,6 @@ public class Convidados {
                     break;
                 case 2:
                     System.out.println("Lista de convidados: " + convidados);
-
-                    //NOTE: caso fosse necessário um for
-//                    for (String convidado : convidados){
-//                        System.out.println(convidado);
-//                    }
                     break;
                 case 3:
                     System.out.println("Quantidade de convidados: " + convidados.size());
@@ -52,7 +47,17 @@ public class Convidados {
                     System.out.println("Opção Inválida");
             }
         }
-
         sc.close();
     }
 }
+//NOTE: outra forma de resolver o case 1:
+//        if (convidados.add(nome)) {
+//            System.out.println("Convidado adicionado!");
+//        } else {
+//            System.out.println("Convidado já está na lista!");
+//        }
+
+//NOTE: caso fosse necessário um for
+//                    for (String convidado : convidados){
+//                        System.out.println(convidado);
+//                    }
