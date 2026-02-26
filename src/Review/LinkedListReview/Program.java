@@ -12,7 +12,7 @@ public class Program {
 
         int escolha = 0;
 
-        while (escolha != 6){
+        while (escolha != 9){
             System.out.println();
             System.out.println("===== Lista de Tarefas =====");
             System.out.println("1 - Adicionar tarefa");
@@ -151,7 +151,11 @@ public class Program {
                     }
                     else {
                         System.out.println("Lista Ordenada: ");
-                        Collections.sort(tarefasList);
+
+                        for (int i = 0; i < tarefasList.size(); i++){
+                            Collections.sort(tarefasList);
+                            System.out.println("-> " + tarefasList.get(i));
+                        }
                     }
                     break;
 
