@@ -24,13 +24,14 @@ public class Convidados {
                 case 1:
                     System.out.print("Digite o noem do convidado: ");
                     String nome = sc.nextLine();
-                    convidados.add(nome);
-                    System.out.println("Convidado adicionado");
 
                     if (convidados.contains(nome)){
                         System.out.println("Convidado já está na lista!");
                     }
-
+                    else {
+                        convidados.add(nome);
+                        System.out.println("Convidado adicionado");
+                    }
                     break;
                 case 2:
                     System.out.println("Lista de convidados: " + convidados);
