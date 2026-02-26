@@ -10,12 +10,13 @@ public class Convidados {
 
         int opcao = 0;
 
-        while (opcao != 4){
+        while (opcao != 5){
             System.out.println("----- Opções -----");
             System.out.println("1. Adicionar convidado");
             System.out.println("2. Ver lista de convidados");
             System.out.println("3. Ver quantidade total");
-            System.out.println("4. Sair");
+            System.out.println("4. Remover convidado");
+            System.out.println("5. Sair");
             System.out.print("Digite a opção desejada: ");
             opcao = sc.nextInt();
             sc.nextLine();
@@ -40,6 +41,17 @@ public class Convidados {
                     System.out.println("Quantidade de convidados: " + convidados.size());
                     break;
                 case 4:
+                    System.out.print("Digite o nome do convidado a ser removido: ");
+                    String nomeRemovido = sc.nextLine();
+
+                    if (convidados.contains(nomeRemovido)){
+                        convidados.remove(nomeRemovido);
+                    }
+                    else {
+                        System.out.println("Convidado inexistente");
+                    }
+                    break;
+                case 5:
                     System.out.println("Programa encerrado");
                     break;
 
