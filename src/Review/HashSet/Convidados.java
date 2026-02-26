@@ -35,6 +35,8 @@ public class Convidados {
 //                        System.out.println(convidado);
 //                    }
                     break;
+                case 3:
+                    System.out.println("Quantidade de convidados: " + convidados.size());
             }
         }
 
