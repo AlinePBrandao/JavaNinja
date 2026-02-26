@@ -16,9 +16,17 @@ public class Convidados {
             System.out.println("2. Ver lista de convidados");
             System.out.println("3. Ver quantidade total");
             System.out.println("4. Sair");
-            System.out.println("Digite a opção desejada: ");
+            System.out.print("Digite a opção desejada: ");
             opcao = sc.nextInt();
             sc.nextLine();
+
+            switch (opcao){
+                case 1:
+                    System.out.print("Digite o noem do convidado: ");
+                    String nome = sc.nextLine();
+                    convidados.add(nome);
+                    System.out.println("Convidado adicionado");
+            }
         }
 
         sc.close();
