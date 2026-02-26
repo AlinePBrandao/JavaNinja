@@ -26,6 +26,15 @@ public class Convidados {
                     String nome = sc.nextLine();
                     convidados.add(nome);
                     System.out.println("Convidado adicionado");
+                    break;
+                case 2:
+                    System.out.println("Lista de convidados: " + convidados);
+
+                    //NOTE: caso fosse necessário um for
+//                    for (String convidado : convidados){
+//                        System.out.println(convidado);
+//                    }
+                    break;
             }
         }
 
