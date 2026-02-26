@@ -63,14 +63,3 @@ public class Convidados {
         sc.close();
     }
 }
-//NOTE: outra forma de resolver o case 1:
-//        if (convidados.add(nome)) {
-//            System.out.println("Convidado adicionado!");
-//        } else {
-//            System.out.println("Convidado já está na lista!");
-//        }
-
-//NOTE: caso fosse necessário um for
-//                    for (String convidado : convidados){
-//                        System.out.println(convidado);
-//                    }
