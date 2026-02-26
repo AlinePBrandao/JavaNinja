@@ -26,6 +26,11 @@ public class Convidados {
                     String nome = sc.nextLine();
                     convidados.add(nome);
                     System.out.println("Convidado adicionado");
+
+                    if (convidados.contains(nome)){
+                        System.out.println("Convidado já está na lista!");
+                    }
+
                     break;
                 case 2:
                     System.out.println("Lista de convidados: " + convidados);
