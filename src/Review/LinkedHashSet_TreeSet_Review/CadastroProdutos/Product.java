@@ -24,4 +24,13 @@ public class Product {
     public void setPreco(double preco) {
         this.preco = preco;
     }
+
+    //NOTE: considerando dois produtos iguais mesmo com preços diferentes
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Product)) return false;
+
+
+    }
 }
