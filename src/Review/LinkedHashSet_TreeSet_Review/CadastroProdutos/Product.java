@@ -31,6 +31,11 @@ public class Product {
         if (this == obj) return true;
         if (!(obj instanceof Product)) return false;
 
+        //NOTE: Cast para Product
+        Product other = (Product) obj;
+
+        //NOTE: Considera igual se o nome for igual
+        return this.nome.equals(other.nome);
 
     }
 }
