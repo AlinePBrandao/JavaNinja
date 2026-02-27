@@ -36,6 +36,10 @@ public class Product {
 
         //NOTE: Considera igual se o nome for igual
         return this.nome.equals(other.nome);
+    }
 
+    @Override
+    public int hashCode() {
+        return nome.toLowerCase().hashCode();
     }
 }
