@@ -5,13 +5,20 @@ import java.util.TreeSet;
 
 public class ProductManager {
 
-    LinkedHashSet<Product> productsHashSet = new LinkedHashSet<>(); //NOTE: ordem de inserção
+    LinkedHashSet<Product> productsLinkedHashSet = new LinkedHashSet<>(); //NOTE: ordem de inserção
     TreeSet<Product> productsTreeSet = new TreeSet<>();//NOTE: ordenados por nome
 
     public void adicionarProduto(String nome, double preco){
-        Product produto = new Product(nome, preco);
-        productsHashSet.add(produto);
-        productsTreeSet.add(produto);
+        Product product = new Product(nome, preco);
+        productsLinkedHashSet.add(product);
+        productsTreeSet.add(product);
+    }
+
+    public void mostrarProdutoInsercao(){
+        System.out.println("Produtos na ordem de inserção: ");
+        for (Product product : productsLinkedHashSet){
+            System.out.println(product);
+        }
     }
 
 
