@@ -32,6 +32,10 @@ public class Program {
                     productManager.mostrarProdutoInsercao();
                     break;
 
+                case 3:
+                    productManager.mostrarProdutoOrdenado();
+                    break;
+
 
             }
         }
