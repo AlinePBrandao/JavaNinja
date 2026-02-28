@@ -13,7 +13,6 @@ public class Product {
         return nome;
     }
 
-
     public double getPreco() {
         return preco;
     }
@@ -35,5 +34,14 @@ public class Product {
     @Override
     public int hashCode() {
         return nome.toLowerCase().hashCode();
+    }
+
+    public int compareTo(Product o){
+        return this.nome.compareToIgnoreCase(o.nome);
+    }
+
+    @Override
+    public String toString() {
+        return "Produto: " + nome + ", preço: R$" + preco;
     }
 }
