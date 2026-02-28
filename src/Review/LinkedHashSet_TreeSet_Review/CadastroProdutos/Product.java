@@ -1,5 +1,8 @@
 package Review.LinkedHashSet_TreeSet_Review.CadastroProdutos;
 
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
+
 public class Product {
     private String nome;
     private double preco;
@@ -25,7 +28,7 @@ public class Product {
         this.preco = preco;
     }
 
-    //NOTE: considera dois produtos iguais mesmo com preços diferentes
+    //NOTE: considera dois produtos iguais pelo nome mesmo com preços diferentes
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
