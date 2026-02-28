@@ -25,7 +25,7 @@ public class Product {
         this.preco = preco;
     }
 
-    //NOTE: considerando dois produtos iguais mesmo com preços diferentes
+    //NOTE: considera dois produtos iguais mesmo com preços diferentes
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -34,10 +34,11 @@ public class Product {
         //NOTE: Cast para Product
         Product other = (Product) obj;
 
-        //NOTE: Considera igual se o nome for igual
-        return this.nome.equals(other.nome);
+        //NOTE: Considera igual se o nome for o mesmo
+        return this.nome.equalsIgnoreCase(other.nome);
     }
 
+    //NOTE: dados iguais tem o mesmo hashCode, retorna localização do objeto na memória
     @Override
     public int hashCode() {
         return nome.toLowerCase().hashCode();
