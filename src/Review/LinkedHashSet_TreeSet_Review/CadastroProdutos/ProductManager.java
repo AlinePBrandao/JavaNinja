@@ -10,8 +10,15 @@ public class ProductManager {
 
     public void adicionarProduto(String nome, double preco){
         Product product = new Product(nome, preco);
+
+        if (productsLinkedHashSet.contains(product)){
+            System.out.println("Produto já cadastrado");
+            return;
+        }
+
         productsLinkedHashSet.add(product);
         productsTreeSet.add(product);
+        System.out.println("Produto cadastrado com sucesso");
     }
 
     public void mostrarProdutoInsercao(){
