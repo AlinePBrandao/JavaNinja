@@ -1,8 +1,5 @@
 package Review.LinkedHashSet_TreeSet_Review.CadastroProdutos;
 
-import java.util.LinkedHashSet;
-import java.util.TreeSet;
-
 public class Product {
     private String nome;
     private double preco;
@@ -16,16 +13,9 @@ public class Product {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 
     public double getPreco() {
         return preco;
-    }
-
-    public void setPreco(double preco) {
-        this.preco = preco;
     }
 
     //NOTE: considera dois produtos iguais pelo nome mesmo com preços diferentes
