@@ -43,7 +43,6 @@ public class Program {
 
                 default:
                     System.out.println("Opção inválida");
-
             }
         }
         sc.close();

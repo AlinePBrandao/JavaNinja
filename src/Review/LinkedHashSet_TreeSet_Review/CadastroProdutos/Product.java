@@ -1,6 +1,6 @@
 package Review.LinkedHashSet_TreeSet_Review.CadastroProdutos;
 
-public class Product {
+public class Product implements Comparable<Product>{
     private String nome;
     private double preco;
 
