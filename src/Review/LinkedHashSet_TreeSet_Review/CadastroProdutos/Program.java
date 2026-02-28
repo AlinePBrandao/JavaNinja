@@ -28,6 +28,10 @@ public class Program {
                     productManager.adicionarProduto(nome, preco);
                     break;
 
+                case 2:
+                    productManager.mostrarProdutoInsercao();
+                    break;
+
 
             }
         }
