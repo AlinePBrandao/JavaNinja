@@ -36,6 +36,12 @@ public class Program {
                     productManager.mostrarProdutoOrdenado();
                     break;
 
+                case 4:
+                    System.out.println("Programa finalizado");
+                    break;
+
+                default:
+                    System.out.println("Opção inválida");
 
             }
         }
