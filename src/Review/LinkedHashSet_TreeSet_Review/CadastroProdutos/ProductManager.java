@@ -21,5 +21,10 @@ public class ProductManager {
         }
     }
 
-
+    public void mostrarProdutoOrdenado(){
+        System.out.println("Produtos ordenados por nome: ");
+        for (Product product : productsTreeSet){
+            System.out.println(product);
+        }
+    }
 }
