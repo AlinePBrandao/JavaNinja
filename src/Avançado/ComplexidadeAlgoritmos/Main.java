@@ -6,6 +6,10 @@ import java.util.LinkedList;
 public class Main {
     public static void main(String[] args) {
 
+        long incio = System.nanoTime(); //NOTE: tempo em nanosegundos
+        long fim= System.nanoTime();
+        long tempo = fim - incio;
+
         ArrayList<Integer> arrayList = new ArrayList<>();
         LinkedList<Integer> linkedList = new LinkedList<>();
 
