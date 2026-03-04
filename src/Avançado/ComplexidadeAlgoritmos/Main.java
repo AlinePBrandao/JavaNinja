@@ -13,21 +13,24 @@ public class Main {
         ArrayList<Integer> arrayList = new ArrayList<>();
         LinkedList<Integer> linkedList = new LinkedList<>();
 
-        for (int i = 0; i < 100; i++){
+        //NOTE: Algoritmo complexidade O(n) - depende do tamanho da lista
+        for (int i = 0; i < 2900500; i++){
             arrayList.add(i);
             linkedList.add(i);
         }
 
-        //NOTE: verificando o numero no index
+        //NOTE: classificao O(n) - Complexidade Linear: a complexidade se altera de acordo com o tamanho do arrayList,
+        // quanto maior a list, mais tempo necessario para realizar operacoes
         incio = System.nanoTime(); //NOTE: tempo em nanosegundos
-        arrayList.get(0);
+        arrayList.remove(250);
         fim= System.nanoTime();
         tempo = fim - incio;
         System.out.println("Tempo Array List: " + tempo + " ns");
 
-        //NOTE: verificando o numero no index
+        //NOTE: classificacao O(1) - Complexidade Constante: independente do numero de opracoes ou elementos, a complexidade
+        // se mantem a mesma
         incio = System.nanoTime();
-        linkedList.get(0);
+        linkedList.remove(250);
         fim= System.nanoTime();
         tempo = fim - incio;
         System.out.println("Tempo Linked List: " + tempo + " ns");
