@@ -6,9 +6,9 @@ import java.util.LinkedList;
 public class Main {
     public static void main(String[] args) {
 
-        long incio = System.nanoTime(); //NOTE: tempo em nanosegundos
-        long fim= System.nanoTime();
-        long tempo = fim - incio;
+        long incio;
+        long fim;
+        long tempo;
 
         ArrayList<Integer> arrayList = new ArrayList<>();
         LinkedList<Integer> linkedList = new LinkedList<>();
@@ -19,9 +19,17 @@ public class Main {
         }
 
         //NOTE: verificando o numero no index
+        incio = System.nanoTime(); //NOTE: tempo em nanosegundos
         arrayList.get(0);
+        fim= System.nanoTime();
+        tempo = fim - incio;
+        System.out.println("Tempo Array List: " + tempo + " ns");
 
         //NOTE: verificando o numero no index
+        incio = System.nanoTime();
         linkedList.get(0);
+        fim= System.nanoTime();
+        tempo = fim - incio;
+        System.out.println("Tempo Linked List: " + tempo + " ns");
     }
 }
