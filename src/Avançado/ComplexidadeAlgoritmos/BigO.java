@@ -7,5 +7,11 @@ public class BigO {
 
         ArrayList<Ninjas> ninjas = new ArrayList<>();
 
+        ninjas.add(new Ninjas("Naruto Uzumaki", 17));
+        ninjas.add(new Ninjas("Sasuke Uchihai", 17));
+        ninjas.add(new Ninjas("Sakura Haruno", 17));
+
+
+
     }
 }
