@@ -11,7 +11,9 @@ public class BigO {
         ninjas.add(new Ninjas("Sasuke Uchihai", 17));
         ninjas.add(new Ninjas("Sakura Haruno", 17));
 
-
+        //NOTE: Constante o(1), indenpendentemente de se ter 1 bilão de itens, a busca será pelo index, sendo assim
+        //a busca será constante, não depende do tamanho da lista
+        System.out.println(ninjas.get(2));
 
     }
 }

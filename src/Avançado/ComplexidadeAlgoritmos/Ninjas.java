@@ -12,6 +12,6 @@ public class Ninjas {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Nome do Ninja: " + nome + " | Idade: " + idade;
     }
 }
