@@ -15,5 +15,12 @@ public class BigO {
         //a busca será constante, não depende do tamanho da lista
         System.out.println(ninjas.get(2));
 
+        System.out.println("----------------------");
+
+        //NOTE: Linear o(n), depende do tamanho da lista, quanto maior mais complexa.
+        for (Ninjas ninja : ninjas){
+            System.out.println(ninja);
+        }
+
     }
 }
