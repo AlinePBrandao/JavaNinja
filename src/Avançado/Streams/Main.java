@@ -16,7 +16,7 @@ public class Main {
 
         //NOTE: método filter filtra a lista recebendo o predicado e o dado referente
         ninjas.stream()
-                .filter(ninjaDados -> ninjaDados.getVila().equals("Konoha"))
+                .filter(ninjaDados -> ninjaDados.getVila().equalsIgnoreCase("konoha"))
                 .forEach(System.out::println); //NOTE: soutc
 
         //NOTE: método sort ordena a lista

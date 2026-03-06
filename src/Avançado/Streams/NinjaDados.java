@@ -2,9 +2,9 @@ package Avançado.Streams;
 
 public class NinjaDados {
 
-    String nome;
-    String vila;
-    int idade;
+    private String nome;
+    private String vila;
+    private int idade;
 
     public NinjaDados(String nome, String vila, int idade){
         this.nome = nome;
