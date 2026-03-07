@@ -1,7 +1,6 @@
 package Avançado.Streams;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -34,11 +33,10 @@ public class Main {
         System.out.println("------------------------------");
 
         //NOTE: ordenar lista por nome
-        List<NinjaDados> ninjasOrdenados = ninjas.stream()
+        List<NinjaDados> ninjasOrdenados = ninjas.stream() //NOTE: converter a list para stream
                 .sorted(Comparator.comparing(NinjaDados::getNome))
                 .collect(Collectors.toList()); //NOTE: transforma o Stream novamente em List
         ninjasOrdenados.forEach(System.out::println);
-
 
 //List<Ninja>
 //   ↓
