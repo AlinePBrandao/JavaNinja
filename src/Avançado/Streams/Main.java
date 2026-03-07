@@ -1,7 +1,9 @@
 package Avançado.Streams;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,5 +30,11 @@ public class Main {
         ninjas.stream()
                 .sorted((n1, n2) -> Integer.compare(n1.getIdade(), n2.getIdade()))
                 .forEach(System.out::println);
+
+        System.out.println("------------------------------");
+
+        //NOTE: ordenar lista por nome
+
+
     }
 }
