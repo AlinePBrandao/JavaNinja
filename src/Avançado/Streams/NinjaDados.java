@@ -1,6 +1,6 @@
 package Avançado.Streams;
 
-public class NinjaDados implements Comparable<NinjaDados>{
+public class NinjaDados{
 
     private String nome;
     private String vila;
@@ -34,10 +34,6 @@ public class NinjaDados implements Comparable<NinjaDados>{
 
     public void setIdade(int idade) {
         this.idade = idade;
-    }
-
-    public int compareTo(NinjaDados nomeA){
-        return this.getNome().compareTo(nomeA.getNome());
     }
 
     @Override

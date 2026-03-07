@@ -2,6 +2,7 @@ package Avançado.Streams;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -21,8 +22,7 @@ public class Main {
         ninjas.stream()
                 .filter(ninjaDados -> ninjaDados.getVila().equalsIgnoreCase("konoha"))
                 .forEach(System.out::println); //NOTE: soutc
-        //NOTE: forEach() printa todos os elementos
-
+        //NOTE: forEach() percorre todos os elementos do Stream e executa uma ação
         System.out.println("------------------------------");
 
         //NOTE: método sort ordena a lista por comparação
@@ -34,7 +34,18 @@ public class Main {
         System.out.println("------------------------------");
 
         //NOTE: ordenar lista por nome
+        List<NinjaDados> ninjasOrdenados = ninjas.stream()
+                .sorted(Comparator.comparing(NinjaDados::getNome))
+                .collect(Collectors.toList()); //NOTE: transforma o Stream novamente em List
+        ninjasOrdenados.forEach(System.out::println);
 
 
+//List<Ninja>
+//   ↓
+//stream()
+//   ↓
+//sorted (comparando pelo nome)
+//   ↓
+//collect → nova lista ordenada
     }
 }
