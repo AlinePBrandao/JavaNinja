@@ -17,13 +17,15 @@ public class Main {
         ninjas.add(new NinjaDados("Temari", "Suna", 17));
         ninjas.add(new NinjaDados("Rock Lee", "Suna", 35));
 
+        System.out.println("----FILTRADO POR VILA----");
         //NOTE: método filter filtra a lista recebendo o predicado e o dado referente
         ninjas.stream()
                 .filter(ninjaDados -> ninjaDados.getVila().equalsIgnoreCase("konoha"))
                 .forEach(System.out::println); //NOTE: soutc
         //NOTE: forEach() percorre todos os elementos do Stream e executa uma ação
-        System.out.println("------------------------------");
 
+        System.out.println("------------------------------");
+        System.out.println("----ORDENADO POR IDADE----");
         //NOTE: método sort ordena a lista por comparação
         //NOTE n1 e n2 tem a funcao de se comparar entre si até que toda a lista tenha sido percorrida e toda ordenação feita
         ninjas.stream()
@@ -31,7 +33,7 @@ public class Main {
                 .forEach(System.out::println);
 
         System.out.println("------------------------------");
-        System.out.println("----PRIMEIRA FORMA DE ORDENAR----");
+        System.out.println("----PRIMEIRA FORMA DE ORDENAR POR NOME----");
 
         //NOTE: ordenar lista por nome
         ninjas.stream()
@@ -39,12 +41,21 @@ public class Main {
                 .forEach(System.out::println);
 
         System.out.println("------------------------------");
-        System.out.println("----TERCEIRA FORMA DE ORDENAR----");
+        System.out.println("----SEGUNDA FORMA DE ORDENAR POR NOME----");
+
         //NOTE: Outra forma de ordenar por nome
         List<NinjaDados> ninjasOrdenados = ninjas.stream() //NOTE: converter a list para stream
                 .sorted(Comparator.comparing(NinjaDados::getNome))
                 .collect(Collectors.toList()); //NOTE: transforma o Stream novamente em List
         ninjasOrdenados.forEach(System.out::println);
+
+
+        System.out.println("------------------------------");
+        System.out.println("----MAPEANDO A LIST E RETORNANDO NOME----");
+        //NOTE: Mapeando a Stram para ordenar lista por nome
+        ninjas.stream()
+                .map(NinjaDados::getNome)
+                .forEach(System.out::println); //NOTE: printa apenas os nomes
 
 //List<Ninja>
 //   ↓
