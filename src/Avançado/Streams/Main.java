@@ -31,8 +31,16 @@ public class Main {
                 .forEach(System.out::println);
 
         System.out.println("------------------------------");
+        System.out.println("----PRIMEIRA FORMA DE ORDENAR----");
 
         //NOTE: ordenar lista por nome
+        ninjas.stream()
+                .sorted((n1, n2) -> n1.getNome().compareTo(n2.getNome()))
+                .forEach(System.out::println);
+
+        System.out.println("------------------------------");
+        System.out.println("----TERCEIRA FORMA DE ORDENAR----");
+        //NOTE: Outra forma de ordenar por nome
         List<NinjaDados> ninjasOrdenados = ninjas.stream() //NOTE: converter a list para stream
                 .sorted(Comparator.comparing(NinjaDados::getNome))
                 .collect(Collectors.toList()); //NOTE: transforma o Stream novamente em List
