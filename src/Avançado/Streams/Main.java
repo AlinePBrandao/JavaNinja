@@ -24,7 +24,7 @@ public class Main {
                 .forEach(System.out::println); //NOTE: soutc
         //NOTE: forEach() percorre todos os elementos do Stream e executa uma ação
 
-        System.out.println("------------------------------");
+        System.out.println();
         System.out.println("----ORDENADO POR IDADE----");
         //NOTE: método sort ordena a lista por comparação
         //NOTE n1 e n2 tem a funcao de se comparar entre si até que toda a lista tenha sido percorrida e toda ordenação feita
@@ -32,7 +32,7 @@ public class Main {
                 .sorted((n1, n2) -> Integer.compare(n1.getIdade(), n2.getIdade()))
                 .forEach(System.out::println);
 
-        System.out.println("------------------------------");
+        System.out.println();
         System.out.println("----PRIMEIRA FORMA DE ORDENAR POR NOME----");
 
         //NOTE: ordenar lista por nome
@@ -40,7 +40,7 @@ public class Main {
                 .sorted((n1, n2) -> n1.getNome().compareTo(n2.getNome()))
                 .forEach(System.out::println);
 
-        System.out.println("------------------------------");
+        System.out.println();
         System.out.println("----SEGUNDA FORMA DE ORDENAR POR NOME----");
 
         //NOTE: Outra forma de ordenar por nome
@@ -50,19 +50,13 @@ public class Main {
         ninjasOrdenados.forEach(System.out::println);
 
 
-        System.out.println("------------------------------");
+        System.out.println();
         System.out.println("----MAPEANDO A LIST E RETORNANDO NOME----");
+
         //NOTE: Mapeando a Stram para ordenar lista por nome
         ninjas.stream()
                 .map(NinjaDados::getNome)
                 .forEach(System.out::println); //NOTE: printa apenas os nomes
 
-//List<Ninja>
-//   ↓
-//stream()
-//   ↓
-//sorted (comparando pelo nome)
-//   ↓
-//collect → nova lista ordenada
     }
 }
