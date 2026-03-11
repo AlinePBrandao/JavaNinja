@@ -58,5 +58,10 @@ public class Main {
                 .map(NinjaDados::getNome)
                 .forEach(System.out::println); //NOTE: printa apenas os nomes
 
+        //NOTE: Max para filtrar ninja mais velho
+        NinjaDados ninjaMaisVelho = ninjas.stream()
+                .max((n1, n2) -> Integer.compare(n1.getIdade(), n2.getIdade()))
+                .orElse(null); //NOTE: mostra nulo caso não tenha ninjas mais velhos
+        System.out.println("Ninja filtrado pelo mais velho = " + ninjaMaisVelho);
     }
 }
